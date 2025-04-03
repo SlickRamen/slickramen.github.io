@@ -41,8 +41,8 @@
 </script>
 
 <body>
-    <!-- <div class="portfolio">
-        <div id="tab2025" class="page filter-pane">
+    <div class="portfolio" id="portfolio-container">
+    <!--    <div id="tab2025" class="page filter-pane">
             <div class="info always-on">
                 <h2 class="title">Current Projects</h2>
                 <sub class="subtitle">Completed or Working on</sub>
@@ -283,13 +283,12 @@
                     <li class="link"><a href="">More Info</a></li>
                 </ul>
             </div>
-        </div>
-    </div> -->
+        </div> -->
+    </div>
 
-    <div w3-include-html="partials/navbar.html"></div> 
+    <div w3-include-html="navbar.html"></div> 
 
-    <script src="/js/page-controller.js"></script>
-    <!-- <script src="/js/projects.js"></script> -->
+    <script src="/js/projects.js"></script>
 
     <footer>
         <div class="links">
@@ -308,7 +307,12 @@
             made and designed by martyn gascoigne [2025]
         </div>
     </footer>
-
 </body>
+
+<script>
+    includeHTML();
+</script>
+
+<script src="/js/page-controller.js"></script>
 
 </html>
