@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../fnt/Inter.ttf") format("truetype");
+}
+
+* {
+    font-family: "Inter", Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    box-sizing: border-box;
+    text-transform: lowercase;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+    perspective: 1500px;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    font-family: "IBM Plex Mono", serif;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    border: 10px solid #fff;
+
+    height: calc(100vh - 20px);
+}
+
+header {
+    padding: 15px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 50px;
+}
+
+
+footer {
+    padding: 15px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    gap: 10px;
+    height: 100px;
+}
+
+.copyright {
+    color: #808080;
+    font-style: normal;
+}
+
+
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.links {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+a {
+    color: #000;
+}
+
+.links a {
+    padding: 5px 10px;
+}
+
+.portfolio {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    top: -50px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.page {
+    position: absolute;
+    width: 320px;
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transform-origin: center;
+
+    border: 1px solid #000;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: -30px;
+}
+
+
+ul {
+    list-style-position: inside;
+    padding-left: 6px;
+}
+
+
+.page:hover {
+    cursor: pointer;
+}
+
+.info {
+    position: relative;
+    width: 100%;
+    min-width: 200px;
+    height: fit-content;
+    top: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    display: flex;
+    flex-flow: column;
+}
+
+.page {
+    background-color: #aaa;
+    background-blend-mode: multiply;
+
+}
+
+.page.selected {
+    background-color: #fff;
+    background-blend-mode: multiply;
+}
+
+.info.always-on {
+    opacity: 1;
+}
+
+.page.selected .info {
+    opacity: 1;
+}
+
+.page.filter-pane {
+    width: 4px;
+    height: 400px;
+    background-color: #000;
+    margin-top: 100px;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.page.filter-pane::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+sub {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.page-date {
+    position: absolute;
+    font-size: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    top: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 2px 10px;
+}
+
+.page {
+    transition: background-color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+}
+
+.page:hover {
+    transform: scale(1.05) translateY(-10px);
+    margin: 50px;
+    background-color: #ccc;
+}
