@@ -71,6 +71,12 @@ updateSelectedIndex(selectedIndex);
 
 // Mouse scroll event listener
 window.addEventListener('wheel', (event) => {
+    const mediaQuery = window.matchMedia('(max-width: 600px)');
+
+    if (mediaQuery.matches) {
+        return;
+    }
+    
     if (event.deltaY > 0) {
         // Scroll down
         selectedIndex++;

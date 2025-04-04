@@ -9,8 +9,8 @@ const projects = [
         year: "2025",
         image: "homehelper.png",
         links: [
-            { url: "https://itch.io", text: "Presskit" },
-            { url: "/more-info", text: "Publisher Demo" },
+            { url: "https://itch.io", text: "Presskit", type: "redirect"},
+            { url: "/more-info", text: "Publisher Demo", type: "redirect"},
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -20,8 +20,8 @@ const projects = [
         year: "2025",
         image: "bloodshot.png",
         links: [
-            { url: "https://itch.io", text: "Presskit" },
-            { url: "/more-info", text: "Publisher Demo" },
+            { url: "https://itch.io", text: "Presskit", type: "redirect"},
+            { url: "/more-info", text: "Publisher Demo", type: "redirect"},
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -32,8 +32,8 @@ const projects = [
         year: "2024",
         image: "bloodshot.png",
         links: [
-            { url: "https://itch.io", text: "Presskit" },
-            { url: "/more-info", text: "Publisher Demo" },
+            { url: "https://itch.io", text: "Presskit", type: "redirect" },
+            { url: "/more-info", text: "Publisher Demo", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -43,7 +43,7 @@ const projects = [
         year: "2024",
         image: "alchemess.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -54,7 +54,7 @@ const projects = [
         year: "2022",
         image: "petersquest.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -65,7 +65,7 @@ const projects = [
         year: "2021",
         image: "roguebots.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -75,7 +75,7 @@ const projects = [
         year: "2021",
         image: "roguebots.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -85,7 +85,7 @@ const projects = [
         year: "2021",
         image: "claret.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -95,7 +95,7 @@ const projects = [
         year: "2021",
         image: "sunnyside.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -105,7 +105,7 @@ const projects = [
         year: "2021",
         image: "cableboy.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -115,7 +115,7 @@ const projects = [
         year: "2021",
         image: "musculus.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -126,7 +126,7 @@ const projects = [
         year: "2020",
         image: "ceptor.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -136,7 +136,7 @@ const projects = [
         year: "2020",
         image: "acumen.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -146,7 +146,7 @@ const projects = [
         year: "2020",
         // image: "",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -156,7 +156,7 @@ const projects = [
         year: "2020",
         // image: "",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -166,7 +166,7 @@ const projects = [
         year: "2020",
         // image: "",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -176,7 +176,7 @@ const projects = [
         year: "2020",
         // image: "",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -186,7 +186,7 @@ const projects = [
         year: "2020",
         // image: "",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -196,7 +196,7 @@ const projects = [
         year: "2020",
         // image: "",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -206,7 +206,7 @@ const projects = [
         year: "2020",
         // image: "",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -216,7 +216,7 @@ const projects = [
         year: "2020",
         // image: "",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -226,7 +226,7 @@ const projects = [
         year: "2020",
         image: "realmsofrequiem.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -236,7 +236,7 @@ const projects = [
         year: "2020",
         // image: "",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -246,7 +246,7 @@ const projects = [
         year: "2020",
         // image: "",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     }

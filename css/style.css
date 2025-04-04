@@ -1,3 +1,5 @@
+/* Sheet for main page style */
+
 @font-face {
     font-family: "Inter";
     src: url("../fnt/Inter.ttf") format("truetype");
@@ -16,10 +18,10 @@ body {
     padding: 0;
     background-color: #fff;
     color: #000;
-    perspective: 1500px;
+    /* perspective: 1500px; */
 
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
 
     font-family: "IBM Plex Mono", serif;
     font-weight: 500;
@@ -27,43 +29,82 @@ body {
     position: relative;
     border: 10px solid #fff;
 
-    height: calc(100vh - 20px);
+    height: 100%;
 }
 
 header {
-    padding: 15px;
+    padding: 2rem;
+    padding-bottom: 1rem;
     background-color: #fff;
-    position: absolute;
-    top: 10px;
+    position: fixed;
+    top: 0;
     left: 0;
     width: 100%;
     display: flex;
     align-items: center;
     gap: 15px;
-    height: 50px;
+    z-index: 100;
+}
+
+.page-content {
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    right: 0;
+    margin: 10rem auto;
+    height: 100%;
+    max-width: 1000px;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
 }
 
 
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 10;
+    width: 100%;
+}
+
+.col.w1     { flex: 1 }
+.col.w2     { flex: 2 }
+.col.w3     { flex: 3 }
+.col.w4     { flex: 4 }
+.col.w5     { flex: 5 }
+.col.w6     { flex: 6 }
+.col.w7     { flex: 7 }
+.col.w8     { flex: 8 }
+.col.w9     { flex: 9 }
+.col.w10    { flex: 10 }
+
+
 footer {
-    padding: 15px;
+    padding: 1rem;
+    padding-bottom: 2rem;
     background-color: #fff;
-    position: absolute;
-    bottom: -10px;
+    position: fixed;
+    bottom: 0;
     left: 0;
     width: 100%;
     display: flex;
     align-items: center;
     flex-flow: column;
     gap: 10px;
-    height: 100px;
+    z-index: 100;
 }
 
 .copyright {
     color: #808080;
     font-style: normal;
 }
-
-
 
 .logo {
     width: 50px;
@@ -76,6 +117,12 @@ footer {
     display: flex;
     align-items: center;
     gap: 15px;
+    justify-content: center;
+    width: 100%;
+}
+
+.links.float-left {
+    justify-content: left;
 }
 
 a {
@@ -90,7 +137,7 @@ a {
     position: relative;
     height: 100vh;
     display: flex;
-    top: -50px;
+    top: -20%;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -116,7 +163,23 @@ a {
 
 ul {
     list-style-position: inside;
+    list-style-type: none;
     padding-left: 6px;
+}
+
+.link {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    background-image: url("../img/icon/link.svg");
+
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.link.redirect {
+    background-image: url("../img/icon/redirect.svg");
 }
 
 
@@ -157,22 +220,30 @@ ul {
 
 .page.filter-pane {
     position: absolute;
-    top: 40%;
     width: 4px;
     left: calc(50% - 10px);
-    height: 600px;
+    height: 400px;
+    margin-bottom: 100px;
     background-color: #b1b1b1;
     border-radius: 2px;
     border: none;
     box-shadow: 0 0 6px rgba(255, 255, 255, 0);
     pointer-events: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.page.filter-pane > .info {
+    position: absolute;
+    top: -80px;
+    left: 0px;
 }
 
 .page.filter-pane::after {
     content: "";
     position: absolute;
     left: 50%;
-    bottom: 0;
+    top: 0;
     transform: translateX(-50%);
     width: 8px;
     height: 8px;
@@ -212,4 +283,96 @@ sub {
     transform: scale(1.05) translateY(-10px);
     margin: 50px;
     background-color: #ccc;
+}
+
+
+@media screen and (max-width: 800px) {
+    .links {
+        gap: 5px;
+    }
+
+    .links a {
+        flex: 1;
+    }
+
+    .page {
+        transform: unset !important;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+
+        min-height: 250px;
+    }
+
+    .page:not(.selected):hover {
+        margin: 0;
+    }
+
+    .page.selected {
+        background-color: #ccc;
+    }
+
+    .portfolio {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        overflow-y: auto;
+        margin: 100px 0;
+        height: calc(100vh - 200px);
+        gap: 20px;
+    }
+
+    .info {
+        position: static;
+        padding: 30px 30px 15px 15px;
+        width: fit-content;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    .page-date {
+        position: absolute;
+        top: 10px;
+        z-index: 10;
+    }
+
+    .page.filter-pane {
+        position: static;
+        background-color: transparent;
+        height: fit-content;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        min-height: fit-content;
+    }
+
+    .page.filter-pane > .info {
+        position: static;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    .optional {
+        display: none;
+    }
+
+    .page.filter-pane::after {
+        content: "";
+        background-color: transparent;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    #navbar-links {
+        display: none;
+    }
 }

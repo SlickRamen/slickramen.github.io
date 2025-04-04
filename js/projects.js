@@ -23,7 +23,7 @@ function loadProjects(projects) {
             newProject.style.backgroundImage = `url(../img/${project.image ?? "placeholder.png"})`;
 
             const links = (project.links ?? [])
-                .map(link => `<li class="link"><a href="${link.url}">${link.text}</a></li>`)
+                .map(link => `<li class="link ${link.type ?? ""}"><a href="${link.url}">${link.text}</a></li>`)
                 .join(""); // Convert array to a string
 
             newProject.innerHTML = `

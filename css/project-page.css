@@ -1,0 +1,28 @@
+/* Sheet for project page style */
+
+.page-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.page-subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #808080;
+}
+
+.page-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.page-body {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
