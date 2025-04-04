@@ -5,6 +5,10 @@
     src: url("../fnt/Inter.ttf") format("truetype");
 }
 
+html {
+    height: 100%;
+}
+
 * {
     font-family: "Inter", Arial, sans-serif;
     font-weight:normal;
@@ -137,7 +141,7 @@ a {
     position: relative;
     height: 100vh;
     display: flex;
-    top: -20%;
+    top: -10%;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -275,6 +279,7 @@ sub {
 .page {
     transition: background-color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
 }
+
 .page.selected:hover {
     cursor: default;
 }
@@ -285,6 +290,26 @@ sub {
     background-color: #ccc;
 }
 
+.hamburger {
+    visibility: hidden;
+    margin-left: auto;
+
+    background-image: url("../img/icon/hamburger.svg");
+    width: 30px;
+    height: 30px;
+
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.hamburger.show {
+    background-image: url("../img/icon/hamburger-close.svg");
+}
+
+#navbar-links {
+    visibility: visible;
+}
 
 @media screen and (max-width: 800px) {
     .links {
@@ -293,6 +318,7 @@ sub {
 
     .links a {
         flex: 1;
+        text-align: center;
     }
 
     .page {
@@ -322,8 +348,8 @@ sub {
         align-items: center;
         justify-content: start;
         overflow-y: auto;
-        margin: 100px 0;
-        height: calc(100vh - 200px);
+        margin: 75px 0;
+        height: calc(100vh - 250px);
         gap: 20px;
     }
 
@@ -333,6 +359,16 @@ sub {
         width: fit-content;
         height: 100%;
         background-color: #fff;
+    }
+
+    .page .info {
+        visibility: hidden;
+        opacity: 1;
+    }
+    
+    .page.selected .info {
+        visibility: visible;
+        opacity: 1;
     }
 
     .page-date {
@@ -353,6 +389,7 @@ sub {
 
     .page.filter-pane > .info {
         position: static;
+        visibility: visible;
         padding: 0;
         width: 100%;
         height: 100%;
@@ -372,7 +409,28 @@ sub {
         text-align: center;
     }
 
+    header {
+        /* position: relative; */
+    }
+
+    .hamburger {
+        visibility: visible;
+    }
+
     #navbar-links {
-        display: none;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        left: 0;
+        top: 5rem;
+        width: 100%;
+        align-items: start;
+        background-color: #fff;
+        padding: 0 2rem 1rem 1rem;
+        visibility: hidden;
+    }
+
+    #navbar-links.show {
+        visibility: visible;
     }
 }

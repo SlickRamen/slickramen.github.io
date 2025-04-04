@@ -1,7 +1,11 @@
+const windowSize = 800;
 let selectedIndex = 0;
 
 let pages = document.querySelectorAll('.page');
 
+/**
+ * Setup all pages
+ */
 pages.forEach((page, index) => {
     page.style.zIndex = pages.length - index; // Higher index for pages in the front
 
@@ -32,31 +36,47 @@ pages.forEach((page, index) => {
 
 });
 
-// Function to update the "selected" page
+/**
+ * Function to update the "selected" page
+ */
 function updateSelectedIndex(newIndex) {
     // Ensure the newIndex is within valid bounds
     if (newIndex < 0 || newIndex >= pages.length) return;
+    
+    const mediaQuery = window.matchMedia(`(max-width: ${windowSize}px)`);
 
     selectedIndex = newIndex;
 
+    // Unset all pages
     pages.forEach((page, index) => {
         pages[index].classList.remove('selected');
-        const distance = Math.min(Math.max(index - selectedIndex, -1), 1); // Distance from the selected index
-        const offsetPush = 500 * distance - selectedIndex * 100; // Push effect diminishes with distance
-        const offset = offsetPush; // Offset increases for farther pages
-        let scale = 0;
-        if (selectedIndex === index) {
-            scale = 1;
+
+        // Only update if necessary
+        if (!mediaQuery.matches) {
+            const distance = Math.min(Math.max(index - selectedIndex, -1), 1); // Distance from the selected index
+            const offsetPush = 500 * distance - selectedIndex * 100; // Push effect diminishes with distance
+            const offset = offsetPush; // Offset increases for farther pages
+            let scale = 0;
+            if (selectedIndex === index) {
+                scale = 1;
+            }
+
+            const currentTransform = page.dataset.initialTransform;
+            page.style.transform = `${currentTransform} translateX(${offset}px) translateY(${- 0.565 * offset}px) scale(${1
+            + scale}) skewY(${- 20 * scale}deg)`;
+
+            page.dataset.currentTransform = page.style.transform;
         }
-        const currentTransform = page.dataset.initialTransform;
-        page.style.transform = `${currentTransform} translateX(${offset}px) translateY(${- 0.565 * offset}px) scale(${1
-        + scale}) skewY(${- 20 * scale}deg)`;
-        page.dataset.currentTransform = page.style.transform;
     });
 
     pages[selectedIndex].classList.add('selected');
 }
 
+/**
+ * Find page index
+ * @param id id to search for 
+ * @returns page index
+ */
 function findPageIndex(id) {
     for (let i = 0; i < pages.length; i++) {
         if (pages[i].id === id) {
@@ -69,9 +89,11 @@ function findPageIndex(id) {
 
 updateSelectedIndex(selectedIndex);
 
-// Mouse scroll event listener
+/**
+ * Mouse scroll event listener
+ */
 window.addEventListener('wheel', (event) => {
-    const mediaQuery = window.matchMedia('(max-width: 600px)');
+    const mediaQuery = window.matchMedia(`(max-width: ${windowSize}px)`);
 
     if (mediaQuery.matches) {
         return;
@@ -91,7 +113,9 @@ window.addEventListener('wheel', (event) => {
     updateSelectedIndex(selectedIndex);
 });
 
-// Function to handle hash navigation
+/**
+ * Function to handle hash navigation
+ */
 function handleHashNavigation() {
     const hash = window.location.hash.substring(1); // Remove the '#' from hash
     if (hash) {
@@ -102,21 +126,25 @@ function handleHashNavigation() {
     }
 }
 
+/**
+ * Handle hamburger menu
+ * @param {} event 
+ */
+function showHamburger(event) {
+    const links = document.getElementById("navbar-links");
+    const hamburger = event.target;
+
+    if (links.classList.contains("show")) {
+        links.classList.remove("show");
+        hamburger.classList.remove("show");
+    } else {
+        links.classList.add("show");
+        hamburger.classList.add("show");
+    }
+}
+
 // Run hash navigation check when the page loads
 window.addEventListener('DOMContentLoaded', handleHashNavigation);
 
 // Run hash navigation check when the hash changes (for when users click a link)
 window.addEventListener('hashchange', handleHashNavigation);
-
-
-//
-// // link selectors
-// window.onload = function () {
-//
-//     var a = document.getElementById("workshop");
-//
-//     a.onclick = function () {
-//         updateSelectedIndex(findPageIndex('tabWorkshop'));
-//         return false;
-//     }
-// }
