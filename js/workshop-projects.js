@@ -2,14 +2,24 @@
  * Set up the list of projects
  */
 const projects = [
-    { divider:    true, divider_id: "tabWorkshop", name:       "Workshop", subtitle:   "Work-in-progress" },
+    { divider:    true, divider_id: "tabWorkshop", name: "Workshop", subtitle: "Work-in-progress" },
     {
         name:       "Bloodline",
         subtitle:   "Game, Windows",
         year:       "tbc",
         image:      "bloodline.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            // { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "/more-info", text: "More Info" }
+        ]
+    },
+    {
+        name:       "seedle",
+        subtitle:   "Game, Windows",
+        year:       "tbc",
+        image:      "seedle.png",
+        links: [
+            // { url: "https://itch.io", text: "Link to itch.io" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -19,7 +29,7 @@ const projects = [
         year:       "tbc",
         image:      "appyskate.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            // { url: "https://itch.io", text: "Link to itch.io" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -27,9 +37,9 @@ const projects = [
         name:       "limaquest!",
         subtitle:   "Game, Windows",
         year:       "tbc",
-        image:      "appyskate.png",
+        image:      "limaquest.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            // { url: "https://itch.io", text: "Link to itch.io" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -39,7 +49,7 @@ const projects = [
         year:       "tbc",
         image:      "musculus2.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            // { url: "https://itch.io", text: "Link to itch.io" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -49,7 +59,7 @@ const projects = [
         year:       "tbc",
         image:      "roguebots.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            // { url: "https://itch.io", text: "Link to itch.io" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -59,7 +69,7 @@ const projects = [
         year:       "tbc",
         image:      "acumen2.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            // { url: "https://itch.io", text: "Link to itch.io" },
             { url: "/more-info", text: "More Info" }
         ]
     },
@@ -69,7 +79,7 @@ const projects = [
         year:       "tbc",
         image:      "acumen2.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io" },
+            // { url: "https://itch.io", text: "Link to itch.io" },
             { url: "/more-info", text: "More Info" }
         ]
     }

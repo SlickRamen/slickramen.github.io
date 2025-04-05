@@ -9,9 +9,18 @@ const projects = [
         year: "2025",
         image: "homehelper.png",
         links: [
-            { url: "https://itch.io", text: "Presskit", type: "redirect"},
-            { url: "/more-info", text: "Publisher Demo", type: "redirect"},
-            { url: "/more-info", text: "More Info" }
+            { url: "https://github.com/SlickRamen", text: "Github Repository", type: "github-mark"},
+            { url: "/page-homehelper", text: "More Info" }
+        ]
+    },
+    {
+        name: "Gromit",
+        subtitle: "Application, Windows",
+        year: "2025",
+        image: "gromit.png",
+        links: [
+            { url: "https://github.com/SlickRamen/gromit", text: "Github Repository", type: "github-mark"},
+            { url: "/page-gromit", text: "More Info" }
         ]
     },
     {
@@ -20,9 +29,9 @@ const projects = [
         year: "2025",
         image: "bloodshot.png",
         links: [
-            { url: "https://itch.io", text: "Presskit", type: "redirect"},
-            { url: "/more-info", text: "Publisher Demo", type: "redirect"},
-            { url: "/more-info", text: "More Info" }
+            // { url: "https://itch.io", text: "Presskit", type: "redirect"},
+            // { url: "/more-info", text: "Publisher Demo", type: "redirect"},
+            { url: "/page-bloodshot", text: "More Info" }
         ]
     },
     { divider: true, divider_id: "tab2024", name: "2024 Works" },
@@ -30,11 +39,11 @@ const projects = [
         name: "Grape Expectations!",
         subtitle: "Application, Linux",
         year: "2024",
-        image: "bloodshot.png",
+        image: "grape.jpg",
         links: [
-            { url: "https://itch.io", text: "Presskit", type: "redirect" },
-            { url: "/more-info", text: "Publisher Demo", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            // { url: "https://itch.io", text: "Presskit", type: "redirect" },
+            // { url: "/more-info", text: "Publisher Demo", type: "redirect" },
+            { url: "/page-grape", text: "More Info" }
         ]
     },
     {
@@ -43,8 +52,8 @@ const projects = [
         year: "2024",
         image: "alchemess.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            // { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-alchemess", text: "More Info" }
         ]
     },
     { divider: true, divider_id: "tab2022", name: "2022 Works" },
@@ -54,8 +63,8 @@ const projects = [
         year: "2022",
         image: "petersquest.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "https://slickramen.itch.io/peters-quest", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-peters-quest", text: "More Info" }
         ]
     },
     { divider: true, divider_id: "tab2021", name: "2021 Works" },
@@ -63,20 +72,19 @@ const projects = [
         name: "ULTRAFORCE: OBLITERATION",
         subtitle: "Game, Windows, Web",
         year: "2021",
-        image: "roguebots.png",
+        image: "ultraforce.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "https://stepford.itch.io/ultra-force-obliteration", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-ufo", text: "More Info" }
         ]
     },
     {
         name: "Untitled Ninja Game",
         subtitle: "Game, Windows",
         year: "2021",
-        image: "roguebots.png",
+        image: "ninja.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "/page-ninja", text: "More Info" }
         ]
     },
     {
@@ -85,8 +93,8 @@ const projects = [
         year: "2021",
         image: "claret.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "https://slickramen.itch.io/claret", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-claret", text: "More Info" }
         ]
     },
     {
@@ -95,8 +103,8 @@ const projects = [
         year: "2021",
         image: "sunnyside.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "https://stepford.itch.io/sunnyside", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-sunnyside", text: "More Info" }
         ]
     },
     {
@@ -105,8 +113,8 @@ const projects = [
         year: "2021",
         image: "cableboy.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "https://stepford.itch.io/cable-boy", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-cableboy", text: "More Info" }
         ]
     },
     {
@@ -115,8 +123,8 @@ const projects = [
         year: "2021",
         image: "musculus.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "https://stepford.itch.io/musculus", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-musculus", text: "More Info" }
         ]
     },
     { divider: true, divider_id: "tab2020", name: "pre. 2020 Works" },
@@ -126,128 +134,138 @@ const projects = [
         year: "2020",
         image: "ceptor.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "https://slickramen.itch.io/ceptor", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-ceptor", text: "More Info" }
         ]
     },
-    {
-        name: "Acumen",
-        subtitle: "Game, Windows",
-        year: "2020",
-        image: "acumen.png",
-        links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
-        ]
-    },
-    {
-        name: "Bump in the Night",
-        subtitle: "Game, Windows",
-        year: "2020",
-        // image: "",
-        links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
-        ]
-    },
+    // {
+    //     name: "Acumen",
+    //     subtitle: "Game, Windows",
+    //     year: "2020",
+    //     image: "acumen.png",
+    //     links: [
+    //         { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
+    //         { url: "/more-info", text: "More Info" }
+    //     ]
+    // },
+    // {
+    //     name: "Bump in the Night",
+    //     subtitle: "Game, Windows",
+    //     year: "2020",
+    //     image: "bumpinthenight.png",
+    //     links: [
+    //         { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
+    //         { url: "/more-info", text: "More Info" }
+    //     ]
+    // },
     {
         name: "Rogue Road",
         subtitle: "Game, Windows",
         year: "2020",
-        // image: "",
+        image: "rogueroad.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "https://stepford.itch.io/rogue-road", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-rogueroad", text: "More Info" }
         ]
     },
     {
-        name: "Paper Fort",
+        name: "Sugoi",
         subtitle: "Game, Windows",
         year: "2020",
-        // image: "",
+        image: "sugoi.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
+            // { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
             { url: "/more-info", text: "More Info" }
         ]
     },
+    // {
+    //     name: "Paper Fort",
+    //     subtitle: "Game, Windows",
+    //     year: "2020",
+    //     image: "paperfort.png",
+    //     links: [
+    //         { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
+    //         { url: "/more-info", text: "More Info" }
+    //     ]
+    // },
     {
         name: "Terrene",
         subtitle: "Game, Windows",
         year: "2020",
-        // image: "",
+        image: "terrene.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "https://slickramen.itch.io/terrene", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-terrene", text: "More Info" }
         ]
     },
     {
         name: "RED SPACE",
         subtitle: "Game, Windows",
         year: "2020",
-        // image: "",
+        image: "redspace.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "https://slickramen.itch.io/redspace", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-redspace", text: "More Info" }
         ]
     },
     {
         name: "Gun Gun",
         subtitle: "Game, Windows",
-        year: "2020",
-        // image: "",
+        year: "2019",
+        image: "gungun.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "https://slickramen.itch.io/gungun", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-gungun", text: "More Info" }
         ]
     },
     {
         name: "DEVASTATION NATION",
         subtitle: "Game, Windows",
-        year: "2020",
-        // image: "",
+        year: "2019",
+        image: "devastationnation.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "https://stepford.itch.io/devastation-nation", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-devastationnation", text: "More Info" }
         ]
     },
     {
         name: "100 Bullets",
         subtitle: "Game, Windows",
-        year: "2020",
-        // image: "",
+        year: "2019",
+        image: "100bullets.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "https://slickramen.itch.io/100bullets", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-100bullets", text: "More Info" }
         ]
     },
     {
         name: "Realms of Requiem",
         subtitle: "Game, Windows",
-        year: "2020",
+        year: "2019",
         image: "realmsofrequiem.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "https://slickramen.itch.io/realms-of-requiem", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-ror", text: "More Info" }
         ]
     },
     {
         name: "BLAMM",
         subtitle: "Game, Windows",
-        year: "2020",
-        // image: "",
+        year: "2018",
+        image: "blamm.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "https://slickramen.itch.io/blamm", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-blamm", text: "More Info" }
         ]
     },
     {
         name: "Blazin' Aces",
         subtitle: "Game, Windows",
-        year: "2020",
-        // image: "",
+        year: "2018",
+        image: "blazinaces.png",
         links: [
-            { url: "https://itch.io", text: "Link to itch.io", type: "redirect" },
-            { url: "/more-info", text: "More Info" }
+            { url: "https://slickramen.itch.io/blazin-aces-game", text: "Link to itch.io", type: "redirect" },
+            { url: "/page-blazinaces", text: "More Info" }
         ]
     }
 ];

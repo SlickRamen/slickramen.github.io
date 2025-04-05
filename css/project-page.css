@@ -1,12 +1,13 @@
 /* Sheet for project page style */
 
 .page-title {
+    margin-top: 1rem;
     font-size: 2rem;
     font-weight: bold;
 }
 
 .page-subtitle {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: normal;
     color: #808080;
 }
@@ -17,12 +18,87 @@
     margin-top: 1rem;
 }
 
+.page-cta {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
 .page-body {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: normal;
 }
 
 .project-image {
     width: 100%;
     height: auto;
+}
+
+.headshot {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+}
+
+.headshot-img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    border-radius: 2px;
+    border: 1px solid var(--outline-color);
+    padding: 1.5rem 1rem 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.skill-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.skill-subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #808080;
+}
+
+.skill-beans {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.skill-bean-token {
+    border-radius: 50px;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid var(--outline-color);
+}
+
+.experience-date {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #808080;
+}
+
+.experience-title-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }

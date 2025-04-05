@@ -1,4 +1,22 @@
 /* Sheet for main page style */
+@import url(../fnt/portfolio-grom/portfolio-grom.css);
+
+:root {
+    /* Dark mode */
+    --bg-color: #fff;
+    --outline-color: #ccc;
+    --text-color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Dark mode */
+        --bg-color: #1c1c1c;
+        --outline-color: #505050;
+        --text-color: #c5c5c5;
+    }
+}
+
 
 @font-face {
     font-family: "Inter";
@@ -11,38 +29,39 @@ html {
 
 * {
     font-family: "Inter", Arial, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-weight:normal;
     font-style:normal;
     box-sizing: border-box;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
 }
 
 body {
+    position: relative;
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    color: #000;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
     /* perspective: 1500px; */
 
     overflow-x: hidden;
     overflow-y: auto;
 
-    font-family: "IBM Plex Mono", serif;
     font-weight: 500;
     font-style: normal;
     position: relative;
-    border: 10px solid #fff;
-
-    height: 100%;
+    border: 10px solid var(--bg-color);
 }
 
 header {
     padding: 2rem;
-    padding-bottom: 1rem;
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
+    background-color: var(--bg-color);
     width: 100%;
     display: flex;
     align-items: center;
@@ -50,16 +69,29 @@ header {
     z-index: 100;
 }
 
-.page-content {
-    top: 100px;
+footer {
+    padding: 2rem;
+    padding-top: 1rem;
+    background-color: var(--bg-color);
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    left: 0;
-    right: 0;
-    margin: 10rem auto;
-    height: 100%;
-    max-width: 1000px;
+    align-items: center;
+    flex-flow: column;
     gap: 10px;
+    z-index: 100;
+}
+
+.page-content {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow-y: auto;
+    padding: 0 1rem 1rem;
+    margin: 0 1rem;
+    height: 100%;
+    gap: 20px;
 }
 
 .row {
@@ -76,6 +108,7 @@ header {
     gap: 10px;
     flex: 10;
     width: 100%;
+    max-width: 1000px;
 }
 
 .col.w1     { flex: 1 }
@@ -90,28 +123,13 @@ header {
 .col.w10    { flex: 10 }
 
 
-footer {
-    padding: 1rem;
-    padding-bottom: 2rem;
-    background-color: #fff;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-    gap: 10px;
-    z-index: 100;
-}
-
 .copyright {
     color: #808080;
     font-style: normal;
 }
 
 .logo {
-    width: 50px;
+    width: 3rem;
     height: auto;
     margin-right: 20px;
 }
@@ -130,7 +148,7 @@ footer {
 }
 
 a {
-    color: #000;
+    color: var(--text-color);
 }
 
 .links a {
@@ -139,31 +157,58 @@ a {
 
 .portfolio {
     position: relative;
-    height: 100vh;
     display: flex;
-    top: -10%;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    flex: 1;
 }
 
 .page {
     position: absolute;
-    width: 320px;
-    height: 240px;
-    background-size: cover;
-    background-position: center;
-    background-color: white;
+    background-color: #000;
     border-radius: 2px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transform-origin: center;
 
-    border: 1px solid #000;
+    border: 1px solid var(--outline-color);
 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     margin: -30px;
+    width: 320px;
+    height: 240px;
 }
 
+@keyframes skeleton-loading {
+    0% {
+        background-color: var(--bg-color);
+    }
+
+    100% {
+        background-color: var(--outline-color);
+    }
+}
+
+.page-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    opacity: 0.75;
+
+    animation: skeleton-loading 1s ease infinite alternate;
+    
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 0.2s ease;
+}
+
+.page.selected > .page-image,
+.page:hover >.page-image {
+    opacity: 1;
+}
 
 ul {
     list-style-position: inside;
@@ -174,18 +219,13 @@ ul {
 .link {
     margin-top: 4px;
     margin-bottom: 10px;
-    padding-left: 30px;
-    background-image: url("../img/icon/link.svg");
 
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    background-position: left center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 1rem;
 }
-
-.link.redirect {
-    background-image: url("../img/icon/redirect.svg");
-}
-
 
 .page:hover {
     cursor: pointer;
@@ -203,17 +243,6 @@ ul {
     flex-flow: column;
 }
 
-.page {
-    background-color: #aaa;
-    background-blend-mode: multiply;
-
-}
-
-.page.selected {
-    background-color: #fff;
-    background-blend-mode: multiply;
-}
-
 .info.always-on {
     opacity: 1;
 }
@@ -228,7 +257,7 @@ ul {
     left: calc(50% - 10px);
     height: 400px;
     margin-bottom: 100px;
-    background-color: #b1b1b1;
+    background-color: var(--outline-color);
     border-radius: 2px;
     border: none;
     box-shadow: 0 0 6px rgba(255, 255, 255, 0);
@@ -251,7 +280,7 @@ ul {
     transform: translateX(-50%);
     width: 8px;
     height: 8px;
-    background-color: #b1b1b1;
+    background-color: var(--outline-color);
     border-radius: 50%;
 }
 
@@ -271,13 +300,13 @@ sub {
     margin: 10px;
     border-radius: 10px;
     top: -20px;
-    background-color: white;
-    border: 1px solid #000;
+    background-color: var(--bg-color);
+    border: 1px solid var(--outline-color);
     padding: 2px 10px;
 }
 
 .page {
-    transition: background-color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .page.selected:hover {
@@ -287,31 +316,45 @@ sub {
 .page:not(.selected):hover {
     transform: scale(1.05) translateY(-10px);
     margin: 50px;
-    background-color: #ccc;
 }
 
 .hamburger {
     visibility: hidden;
     margin-left: auto;
 
-    background-image: url("../img/icon/hamburger.svg");
+    background-color: var(--text-color);
+    mask: url("../img/icon/hamburger.svg");
+
     width: 30px;
     height: 30px;
 
-    background-size: 30px 30px;
-    background-repeat: no-repeat;
-    background-position: left center;
+    mask-size: 30px 30px;
+    mask-repeat: no-repeat;
+    mask-position: left center;
 }
 
 .hamburger.show {
-    background-image: url("../img/icon/hamburger-close.svg");
+    mask: url("../img/icon/hamburger-close.svg");
+    mask-size: 30px 30px;
+    mask-repeat: no-repeat;
+    mask-position: left center;
 }
 
 #navbar-links {
     visibility: visible;
 }
 
+
+
 @media screen and (max-width: 800px) {
+    body {
+        border: none;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+    
     .links {
         gap: 5px;
     }
@@ -348,8 +391,9 @@ sub {
         align-items: center;
         justify-content: start;
         overflow-y: auto;
-        margin: 75px 0;
-        height: calc(100vh - 250px);
+        padding: 0 1rem 1rem;
+        margin: 0 1rem;
+        height: 100%;
         gap: 20px;
     }
 
@@ -358,7 +402,8 @@ sub {
         padding: 30px 30px 15px 15px;
         width: fit-content;
         height: 100%;
-        background-color: #fff;
+        background-color: var(--bg-color);
+        border-right: 1px var(--outline-color) solid;
     }
 
     .page .info {
@@ -373,7 +418,7 @@ sub {
 
     .page-date {
         position: absolute;
-        top: 10px;
+        top: 5px;
         z-index: 10;
     }
 
@@ -393,7 +438,8 @@ sub {
         padding: 0;
         width: 100%;
         height: 100%;
-        background-color: #fff;
+        background-color: var(--bg-color);
+        border: none;
     }
 
     .optional {
@@ -410,7 +456,11 @@ sub {
     }
 
     header {
-        /* position: relative; */
+        border-bottom: 1px var(--outline-color) solid;
+    }
+
+    footer {
+        border-top: 1px var(--outline-color) solid;
     }
 
     .hamburger {
@@ -425,9 +475,10 @@ sub {
         top: 5rem;
         width: 100%;
         align-items: start;
-        background-color: #fff;
+        background-color: var(--bg-color);
         padding: 0 2rem 1rem 1rem;
         visibility: hidden;
+        border-bottom: 1px var(--outline-color) solid;
     }
 
     #navbar-links.show {

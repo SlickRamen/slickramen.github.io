@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact | martyn</title>
+    <title>about | martyn</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-page.css">
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <script src="/js/hamburger.js"></script>
 </head>
 
 <script>
@@ -43,18 +46,30 @@
 <body>
     <header w3-include-html="navbar.html"></header> 
 
-    <div class="content-body" id="content-body"></div>
+    <div class="page-content" id="content-holder">
+        <div class="col">
+            <span class="page-title">Contact</span>
+            <span class="page-subtitle">How to contact me</span>
+            
+            <ul>
+                <li class="link"><a href="https://github.com/SlickRamen"><i class="icon-github-mark" style="margin-right: 5px;"></i>GitHub</a></li>
+                <li class="link"><a href="https://www.linkedin.com/in/martyn-gascoigne-7732772a8/"><i class="icon-linkedin" style="margin-right: 5px;"></i>LinkedIn</a></li>
+                <li class="link"><a href="#"><i class="icon-email" style="margin-right: 5px;"></i>Email</a></li>
+            </ul>
+
+        </div>
+    </div>
     
     <footer>
         <div class="links">
-            <a href="https://github.com/SlickRamen">github</a>
-            <a href="https://www.linkedin.com/in/martyn-gascoigne-7732772a8/">linkedin</a>
-            <a href="#">email</a>
-            |
-            <a id="about1" href="">about 1</a>
-            <a id="about2" href="">about 2</a>
-            <a id="about3" href="">about 3</a>
-            <a id="about4" href="">about 4</a>
+            <a class="optional" href="https://github.com/SlickRamen"><i class="icon-github-mark" style="margin-right: 5px;"></i>GitHub</a>
+            <a class="optional" href="https://www.linkedin.com/in/martyn-gascoigne-7732772a8/"><i class="icon-linkedin" style="margin-right: 5px;"></i>LinkedIn</a>
+            <a class="optional" href="#"><i class="icon-email" style="margin-right: 5px;"></i>Email</a>
+            <span class="optional">|</span>
+            <a id="about1" href="#background">Background</a>
+            <a id="about2" href="#skills">Skills</a>
+            <a id="about3" href="#experience">Experience</a>
+            <a id="about4" href="#education">Education</a>
         </div>
         <div class="copyright">
             designed and constructed by martyn gascoigne [2025]

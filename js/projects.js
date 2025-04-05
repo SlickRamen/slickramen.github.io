@@ -20,10 +20,8 @@ function loadProjects(projects) {
             `
         } else {
             // Regular Project
-            newProject.style.backgroundImage = `url(../img/${project.image ?? "placeholder.png"})`;
-
             const links = (project.links ?? [])
-                .map(link => `<li class="link ${link.type ?? ""}"><a href="${link.url}">${link.text}</a></li>`)
+                .map(link => `<li class="link"><i class="icon-${link.type ?? 'link'} use-line-height"></i><a href="${link.url}">${link.text}</a></li>`)
                 .join(""); // Convert array to a string
 
             newProject.innerHTML = `
@@ -36,6 +34,12 @@ function loadProjects(projects) {
                     </ul>
                 </div>
             `
+            
+            const img = document.createElement("img");
+            img.classList = "page-image";
+            img.setAttribute("loading", "lazy");
+            img.src = `../img/${project.image ?? "default-profile.png"}`;
+            newProject.appendChild(img);
         }
 
         projectHolder.appendChild(newProject);

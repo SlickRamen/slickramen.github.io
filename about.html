@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about | martyn</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-page.css">
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <script src="/js/hamburger.js"></script>
 </head>
 
 <script>
@@ -43,18 +46,140 @@
 <body>
     <header w3-include-html="navbar.html"></header> 
 
-    <div class="content-body" id="content-body"></div>
+    <div class="page-content" id="content-holder">
+        <div class="col">
+            <div class="row" style="gap: 20px; margin-top: 1rem">
+                <div class="col w3">
+                    <span class="headshot">
+                        <img class="headshot-img" src="/img/default-profile.png" loading="lazy">
+                    </span>
+                </div>
+
+                <div class="col w7">
+                    <span class="page-header">Hi, my name is</span>
+                    <span class="page-title" style="margin: 0.5rem 0;">Martyn Gascoigne</span>
+                        <span class="page-cta">
+                            I'm a third-year software engineering student studying at the University of Canterbury in New Zealand.
+                            I've been designing, programming and building all kinds of things for the past 8+ years. 
+                            A majority of my experience has come in the form of game development, although in recent years I've tended towards application and web development.
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <span class="page-header" id="background">Background</span>
+            <span class="page-body">
+                I learned how to code from a young age. I started out as a self-taught game developer. As I got more experienced, 
+                I began to enter into game-jams and take things a bit more seriously. This gave me a lot of experience with working and 
+                communicating with other developers, managing deadlines, and delivering a finished product at the end of it. Since entering University,
+                I've generally spent more time learning new Languages and working on applications but am still very actively developing games (when I have the time!)
+            </span>
+
+            <span class="page-header" id="skills">Skills</span>
+            <div class="skills">
+                <div class="skill">
+                    <span class="skill-title">Programming</span>
+                    <span class="skill-body">I'm comfortable working across a range of languages and technologies. I enjoy learning new stuff to tackle different challenges.</span>
+                    <div class="skill-beans">
+                        <span class="skill-bean-token">Java</span>
+                        <span class="skill-bean-token">Python</span>
+                        <span class="skill-bean-token">C</span>
+                        <span class="skill-bean-token">C#</span>
+                        <span class="skill-bean-token">GML</span>
+                        <span class="skill-bean-token">JavaScript</span>
+                        <span class="skill-bean-token">TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-title">Game Design and Development</span>
+                    <span class="skill-body">I've got many years of game design and development experience. I enjoy designing mechanics, creating assets, and bringing it all together into a polished experience.</span>
+                    <div class="skill-beans">
+                        <span class="skill-bean-token">Gameplay Design</span>
+                        <span class="skill-bean-token">Traditional Art</span>
+                        <span class="skill-bean-token">Pixel Art</span>
+                        <span class="skill-bean-token">Animation</span>
+                        <span class="skill-bean-token">Asset Management</span>
+                        <span class="skill-bean-token">Teamwork</span>
+                        <span class="skill-bean-token">Managing Deadlines</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-title">UI Design</span>
+                    <span class="skill-body">I'm experienced with designing clean, user-friendly interfaces and iconography that enhance usability and user experience.</span>
+                    <div class="skill-beans">
+                        <span class="skill-bean-token">Adobe Illustrator</span>
+                        <span class="skill-bean-token">Figma</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-title">Web Development</span>
+                    <span class="skill-body">I have hands-on experience with both frontend and backend development, creating dynamic and responsive applications.</span>
+                    <div class="skill-beans">
+                        <span class="skill-bean-token">HTML</span>
+                        <span class="skill-bean-token">CSS</span>
+                        <span class="skill-bean-token">JavaScript</span>
+                        <span class="skill-bean-token">TypeScript</span>
+                        <span class="skill-bean-token">Node.js</span>
+                    </div>
+                </div>
+            </div>
+            <span class="page-body">See some of my work <a href="/">here</a></span>
+
+            <span class="page-header" id="experience">Experience</span>
+            <div class="skills">
+                <div class="skill">
+                    <span class="experience-date">2024</span>
+                    <span class="experience-title-holder">
+                        <span class="skill-title">CRM Assistant</span>
+                        <span class="skill-subtitle">NZPPI</span>
+                    </span>
+                    <span class="skill-body">A summer job as a CRM Assistant at the NZPPI. It focused mainly on updating the organization's CRM and collating / updating data for members.</span>
+                    <div class="skill-beans">
+                        <span class="skill-bean-token">CRM</span>
+                        <span class="skill-bean-token">Excel</span>
+                        <span class="skill-bean-token">Data Management</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="experience-date">2021 - 2024</span>
+                    <span class="experience-title-holder">
+                        <span class="skill-title">Information Assistant</span>
+                        <span class="skill-subtitle">Education Review Office</span>
+                    </span>
+                    <span class="skill-body">A summer job as an Information Assistant at the Education Review Office, working with the Microsoft 365 tool suite. It focused particularly on Sharepoint and Excel, transferring large amounts of data and organizing it.</span>
+                    <div class="skill-beans">
+                        <span class="skill-bean-token">Microsoft 365</span>
+                        <span class="skill-bean-token">Sharepoint</span>
+                        <span class="skill-bean-token">Excel</span>
+                        <span class="skill-bean-token">Data Management</span>
+                    </div>
+                </div>
+            </div>
+
+            <span class="page-header" id="education">Education</span>
+            <div class="skills">
+                <div class="skill">
+                    <span class="experience-date">2023 - Present</span>
+                    <span class="experience-title-holder">
+                        <span class="skill-title">BEng with Honours in Software Engineering</span>
+                        <span class="skill-subtitle">University of Canterbury</span>
+                    </span>
+                    <span class="skill-body">I am currently in my third year of Software Engineering at UC.<br>My most recent GPA was 7.25 </span>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <footer>
         <div class="links">
-            <a href="https://github.com/SlickRamen">github</a>
-            <a href="https://www.linkedin.com/in/martyn-gascoigne-7732772a8/">linkedin</a>
-            <a href="#">email</a>
-            |
-            <a id="about1" href="">about 1</a>
-            <a id="about2" href="">about 2</a>
-            <a id="about3" href="">about 3</a>
-            <a id="about4" href="">about 4</a>
+            <a class="optional" href="https://github.com/SlickRamen"><i class="icon-github-mark" style="margin-right: 5px;"></i>GitHub</a>
+            <a class="optional" href="https://www.linkedin.com/in/martyn-gascoigne-7732772a8/"><i class="icon-linkedin" style="margin-right: 5px;"></i>LinkedIn</a>
+            <a class="optional" href="#"><i class="icon-email" style="margin-right: 5px;"></i>Email</a>
+            <span class="optional">|</span>
+            <a id="about1" href="#background">Background</a>
+            <a id="about2" href="#skills">Skills</a>
+            <a id="about3" href="#experience">Experience</a>
+            <a id="about4" href="#education">Education</a>
         </div>
         <div class="copyright">
             designed and constructed by martyn gascoigne [2025]
