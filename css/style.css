@@ -481,6 +481,7 @@ sub {
         padding: 0 2rem 1rem 1rem;
         visibility: hidden;
         border-bottom: 1px var(--outline-color) solid;
+        z-index: 10;
     }
 
     #navbar-links.show {
