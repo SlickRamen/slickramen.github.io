@@ -354,7 +354,7 @@ sub {
     .row {
         flex-direction: column;
     }
-    
+
     .links {
         gap: 5px;
     }
@@ -456,10 +456,12 @@ sub {
     }
 
     header {
+        padding: 1rem 2rem;
         border-bottom: 1px var(--outline-color) solid;
     }
 
     footer {
+        padding: 1rem 2rem;
         border-top: 1px var(--outline-color) solid;
     }
 
@@ -472,7 +474,7 @@ sub {
         position: absolute;
         flex-direction: column;
         left: 0;
-        top: 5rem;
+        top: 4rem;
         width: 100%;
         align-items: start;
         background-color: var(--bg-color);
