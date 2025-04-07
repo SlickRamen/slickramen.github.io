@@ -26,7 +26,8 @@
 }
 
 .icon-email:before { content: "\e900"; }
-.icon-github-mark:before { content: "\e901"; }
-.icon-link:before { content: "\e902"; }
-.icon-linkedin:before { content: "\e903"; }
-.icon-redirect:before { content: "\e904"; }
+.icon-github:before { content: "\e901"; }
+.icon-itchio:before { content: "\e902"; }
+.icon-link:before { content: "\e903"; }
+.icon-linkedin:before { content: "\e904"; }
+.icon-redirect:before { content: "\e905"; }

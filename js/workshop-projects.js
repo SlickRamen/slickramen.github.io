@@ -14,7 +14,7 @@ const projects = [
         ]
     },
     {
-        name:       "seedle",
+        name:       "Seedle",
         subtitle:   "Game, Windows",
         year:       "tbc",
         image:      "seedle.png",

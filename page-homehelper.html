@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project | martyn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <script src="/js/generate-project-page.js"></script>
+    <script src="/js/hamburger.js"></script>
+</head>
+
+<body>
+    <header id="navbar"></header> 
+    <script src="/js/generate-navbar.js" defer></script>
+    
+    <div class="page-content" id="content-holder"></div>
+
+    <footer id="footer"></footer>
+</body>
+
+<script>
+    generateProjectPageLayout(
+        "Home Helper",
+        "Renovation guide and management application",
+        [
+            { url: "https://github.com/SlickRamen/gromit", text: "Github Repository", type: "github"},
+        ],
+        "/img/homehelper.png",
+        `
+        <span class="page-header">Pitch</span>
+        <span class="page-body">
+            Welcome to Home Helper, a web app which aims to aid to-be tradies and help turn D-I-Y into D-O-N-E!
+        </span>
+
+        <span class="page-header">Development</span>
+        <span class="page-body">
+            This application is currently being developed in a small group as a University project.
+        </span>
+
+        <span class="page-header">Uploads</span>
+        <div class="row">
+            <div class="col w5">
+                <img class="project-image" src="/img/claret/claret-upload1.png" loading="lazy">
+                <img class="project-image" src="/img/claret/claret-upload3.png" loading="lazy">
+            </div>
+            <div class="col w5">
+                <img class="project-image" src="/img/claret/claret-upload2.png" loading="lazy">
+                <img class="project-image" src="/img/claret/claret-upload4.png" loading="lazy">
+            </div>
+        </div>
+        `
+    );
+</script>
+
+</html>

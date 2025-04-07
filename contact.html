@@ -13,73 +13,67 @@
     <script src="/js/hamburger.js"></script>
 </head>
 
-<script>
-    function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        /*loop through a collection of all HTML elements:*/
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute("w3-include-html");
-        if (file) {
-            /*make an HTTP request using the attribute value as the file name:*/
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-                if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                /*remove the attribute, and call this function once more:*/
-                elmnt.removeAttribute("w3-include-html");
-                includeHTML();
-            }
-            }      
-            xhttp.open("GET", file, true);
-            xhttp.send();
-            /*exit the function:*/
-            return;
-        }
-        }
-    };
-</script>
-
 <body>
-    <header w3-include-html="navbar.html"></header> 
+    <header id="navbar"></header> 
+    <script src="/js/generate-navbar.js" defer></script>
 
     <div class="page-content" id="content-holder">
         <div class="col">
             <span class="page-title">Contact</span>
             <span class="page-subtitle">How to contact me</span>
             
-            <ul>
-                <li class="link"><a href="https://github.com/SlickRamen"><i class="icon-github-mark" style="margin-right: 5px;"></i>GitHub</a></li>
+            <!-- <ul>
+                <li class="link"><a href="https://github.com/SlickRamen"><i class="icon-github" style="margin-right: 5px;"></i>GitHub</a></li>
                 <li class="link"><a href="https://www.linkedin.com/in/martyn-gascoigne-7732772a8/"><i class="icon-linkedin" style="margin-right: 5px;"></i>LinkedIn</a></li>
                 <li class="link"><a href="#"><i class="icon-email" style="margin-right: 5px;"></i>Email</a></li>
-            </ul>
+            </ul> -->
+            <a href="#" style="font-size: clamp(1rem, 6vw, 5rem); font-weight: bold;">martyngasc@gmail.com</a>
 
+            <span class="page-header" id="experience">Where to find me</span>
+            <div class="skills">
+                <a class="skill" href="https://www.github.com/slickramen/">
+                    <span class="experience-title-holder">
+                        <span class="skill-icon-holder">
+                            <span class="skill-title"><i class="icon-github use-line-height" style="margin-right: 0.325em;"></i>GitHub</span>
+                            <i class="optional icon-redirect use-line-height" style="margin-left: auto; font-size: 1.5rem"></i>
+                        </span>
+                        <span class="skill-subtitle">@slickramen</span>
+                    </span>
+                    <span class="skill-body">My public GitHub. A few projects on here but mostly work-in-progress games and applications.</span>
+                </a>
+                <a class="skill" href="https://slickramen.itch.io/">
+                    <span class="experience-title-holder">
+                        <span class="skill-icon-holder">
+                            <span class="skill-title"><i class="icon-itchio use-line-height" style="margin-right: 0.325em;"></i>itch.io</span>
+                            <i class="optional icon-redirect use-line-height" style="margin-left: auto; font-size: 1.5rem"></i>
+                        </span>
+                        <span class="skill-subtitle">@slickramen</span>
+                    </span>
+                    <span class="skill-body">My itch.io page. This is where I post all of my completed games.</span>
+                </a>
+                <a class="skill" href="https://www.linkedin.com/in/martyn-gascoigne-7732772a8/">
+                    <span class="experience-title-holder">
+                        <span class="skill-icon-holder">
+                            <span class="skill-title"><i class="icon-linkedin use-line-height" style="margin-right: 0.325em;"></i>LinkedIn</span>
+                            <i class="optional icon-redirect use-line-height" style="margin-left: auto; font-size: 1.5rem"></i>
+                        </span>
+                        <span class="skill-subtitle">@martyn-gascoigne</span>
+                    </span>
+                    <span class="skill-body">My LinkedIn page.</span>
+                </a>
+            </div>
         </div>
     </div>
-    
-    <footer>
-        <div class="links">
-            <a class="optional" href="https://github.com/SlickRamen"><i class="icon-github-mark" style="margin-right: 5px;"></i>GitHub</a>
-            <a class="optional" href="https://www.linkedin.com/in/martyn-gascoigne-7732772a8/"><i class="icon-linkedin" style="margin-right: 5px;"></i>LinkedIn</a>
-            <a class="optional" href="#"><i class="icon-email" style="margin-right: 5px;"></i>Email</a>
-            <span class="optional">|</span>
-            <a id="about1" href="#background">Background</a>
-            <a id="about2" href="#skills">Skills</a>
-            <a id="about3" href="#experience">Experience</a>
-            <a id="about4" href="#education">Education</a>
-        </div>
-        <div class="copyright optional">
-            designed and constructed by martyn gascoigne [2025]
-        </div>
-    </footer>
-</body>
 
-<script>
-    includeHTML();
-</script>
+    <footer id="footer"></footer>
+
+    <div id="footer-links" style="visibility: hidden">
+        <a id="about1" href="#background">Background</a>
+        <a id="about2" href="#skills">Skills</a>
+        <a id="about3" href="#experience">Experience</a>
+        <a id="about4" href="#education">Education</a>
+    </div>
+</body>
 
 <script src="/js/page-controller.js"></script>
 

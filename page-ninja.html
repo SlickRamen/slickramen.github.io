@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project | martyn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <script src="/js/generate-project-page.js"></script>
+    <script src="/js/hamburger.js"></script>
+</head>
+
+<body>
+    <header id="navbar"></header> 
+    <script src="/js/generate-navbar.js" defer></script>
+    
+    <div class="page-content" id="content-holder"></div>
+
+    <footer id="footer"></footer>
+</body>
+
+<script>
+    generateProjectPageLayout(
+        "Untitled Ninja Game",
+        "Shinobi showdown with cute doggies",
+        [
+            { url: "", text: "Download", type:"link"}
+        ],
+        "/img/ninja.png",
+        `
+        <span class="page-header">Pitch</span>
+        <span class="page-body">
+            It's a fight to the death! Best your opponent in hand-to-hand combat or use your wits to outskill them! Play against an AI or human opponent in local multiplayer.
+        </span>
+
+        <span class="page-header">Development</span>
+        <span class="page-body">
+            I made this game for a highschool assignment. We were tasked with creating a game using the PyGame framework for Python. I'd never used it before but picked it up pretty quickly.
+            I really wanted to push myself with this project to see what I could do using an unfamiliar framework and in a short period of time. I was inspired heavily by the game "Samurai Gunn"
+            and I believe the influence shines through.
+            <br><br>
+            I started by creating a basic movement system and camera, allowing me to work on the platforming elements and make them feel really good.
+            I then began working on the traps and enemy AI. I knew as this was for a school assessment, I needed to create a somewhat convincing enemy AI character so that it could be assessed properly.
+            My goal from the start was to allow for couch co-op (I implemented 4 playable characters but due to most keyboards not supporting that many keyboard inputs it wasn't very playable).
+            <br><br>
+            I then spent a fair bit of time designing the assets and animations. I had to make a lot of custom classes to allow for animated characters and particle effects. I knew I wanted to include these
+            as I thought they'd improve the overall experience tenfold. I was proven right as in the end I was extremely proud of the way the graphics looked and how juicy the gameplay experience was.
+            <br><br>
+            I also implemented a level save and load feature and tutorial. To make it easier to create these levels, I also created a level editor system to allow me to precisely place props in the level, define spawn locations
+            and create traps and pitfalls.
+        </span>
+
+        <span class="page-header">Uploads</span>
+        <div class="row">
+            <div class="col w5">
+                <img class="project-image" src="/img/ninja/ninja-upload1.png" loading="lazy">
+                <img class="project-image" src="/img/ninja/ninja-upload3.png" loading="lazy">
+                <img class="project-image" src="/img/ninja/ninja-upload5.png" loading="lazy">
+            </div>
+            <div class="col w5">
+                <img class="project-image" src="/img/ninja/ninja-upload2.png" loading="lazy">
+                <img class="project-image" src="/img/ninja/ninja-upload4.png" loading="lazy">
+                <img class="project-image" src="/img/ninja/ninja-upload6.png" loading="lazy">
+            </div>
+        </div>
+        `
+    );
+</script>
+
+</html>

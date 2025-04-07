@@ -12,6 +12,13 @@
     color: #808080;
 }
 
+.page-note {
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+    color: #808080;
+}
+
 .page-header {
     font-size: 1.25rem;
     font-weight: bold;
@@ -29,8 +36,18 @@
 }
 
 .project-image {
+    object-fit: cover;
+    object-position: center;
+    flex: 1;
     width: 100%;
-    height: auto;
+}
+
+.project-cover {
+    object-fit: cover;
+    object-position: center;
+    flex: 1;
+    width: 100%;
+    max-height: 300px;
 }
 
 .headshot {
@@ -65,17 +82,32 @@
     flex-direction: column;
     gap: 20px;
     width: 100%;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.skill:hover {
+    background-color: color-mix(in srgb, var(--outline-color) 50%, rgba(255, 255, 255, 0));
 }
 
 .skill-title {
     font-weight: bold;
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    line-break: anywhere;
+}
+
+.skill-icon-holder {
+    display: flex;
+    align-items: center;
 }
 
 .skill-subtitle {
     font-size: 1rem;
     font-weight: normal;
     color: #808080;
+    line-break: anywhere;
 }
 
 .skill-beans {
@@ -101,4 +133,17 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+    .skill-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
 }

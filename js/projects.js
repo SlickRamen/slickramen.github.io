@@ -29,7 +29,7 @@ function loadProjects(projects) {
                 <div class="info">
                     <h2 class="title">${project.name ?? ""}</h2>
                     <sub class="subtitle">${project.subtitle ?? ""}</sub>
-                    <ul>
+                    <ul style="margin-top: 0">
                         ${links}
                     </ul>
                 </div>

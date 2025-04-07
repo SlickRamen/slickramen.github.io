@@ -12,61 +12,21 @@
     <script src="/js/hamburger.js"></script>
 </head>
 
-<script>
-    function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        /*loop through a collection of all HTML elements:*/
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute("w3-include-html");
-        if (file) {
-            /*make an HTTP request using the attribute value as the file name:*/
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-                if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                /*remove the attribute, and call this function once more:*/
-                elmnt.removeAttribute("w3-include-html");
-                includeHTML();
-            }
-            }      
-            xhttp.open("GET", file, true);
-            xhttp.send();
-            /*exit the function:*/
-            return;
-        }
-        }
-    };
-</script>
-
 <body>
-    <header w3-include-html="navbar.html"></header> 
+    <header id="navbar"></header> 
+    <script src="/js/generate-navbar.js" defer></script>
 
     <div class="portfolio" id="portfolio-container"></div>
     
     <script src="/js/projects.js"></script>
     <script src="/js/workshop-projects.js"></script>
 
-    <footer>
-        <div class="links">
-            <a class="optional" href="https://github.com/SlickRamen"><i class="icon-github-mark" style="margin-right: 5px;"></i>GitHub</a>
-            <a class="optional" href="https://www.linkedin.com/in/martyn-gascoigne-7732772a8/"><i class="icon-linkedin" style="margin-right: 5px;"></i>LinkedIn</a>
-            <a class="optional" href="#"><i class="icon-email" style="margin-right: 5px;"></i>Email</a>
-            <span class="optional">|</span>
-            <a id="workshop" href="">Workshop</a>
-        </div>
-        <div class="copyright optional">
-            designed and constructed by martyn gascoigne [2025]
-        </div>
-    </footer>
-</body>
+    <footer id="footer"></footer>
 
-<script>
-    includeHTML();
-</script>
+    <div id="footer-links" style="visibility: hidden">
+        <a id="workshop" href="">Workshop</a>
+    </div>
+</body>
 
 <script src="/js/page-controller.js"></script>
 

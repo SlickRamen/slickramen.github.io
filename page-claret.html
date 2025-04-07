@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project | martyn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <script src="/js/generate-project-page.js"></script>
+    <script src="/js/hamburger.js"></script>
+</head>
+
+<body>
+    <header id="navbar"></header> 
+    <script src="/js/generate-navbar.js" defer></script>
+    
+    <div class="page-content" id="content-holder"></div>
+
+    <script src="/js/resize-game-iframe.js" defer></script>
+
+    <footer id="footer"></footer>
+</body>
+
+<script>
+    generateProjectPageLayout(
+        "Claret",
+        "A fast-paced precision platformer where your own blood hurts you",
+        [
+            { url: "https://slickramen.itch.io/claret", text: "Link to itch.io", type:"itchio"}
+        ],
+        "/img/claret.png",
+        `
+        <div id="game-holder" data-width="1280" data-height="720">
+            <iframe 
+                src="game/claret/index.html" 
+                width="100%"
+                height="100%"
+                style="border:none;">
+            </iframe>
+        </div>
+        <span class="page-note">Note: Game doesn't work on mobile. Please play on desktop.</span>
+
+        <span class="page-header">Pitch</span>
+        <span class="page-body">
+            It's a race to the exit where every millisecond matters. Escape perilous traps and evade obstacles, 
+            with the biggest being yourself. Your own blood leaks from your squishy body, 
+            splattering onto whatever you smash into. It burns you - stay in it for too long and you'll be blown to smithereens.
+        </span>
+
+        <span class="page-header">Development</span>
+        <span class="page-body">
+            I started working on Claret in 2021 as a side project. I'd just joined the popular content hosting site Newgrounds and wanted to experiment with a quick and easy project.
+            I built the game around the fast-paced platforming aspect and the blood mechanic allowed me to create some pretty interesting puzzle designs. I wanted to go with very simple graphics
+            and focus more on making the experience feel juicy and the movement feel weighty yet precise.
+            <br><br>
+            This game was the beginning of my experiments with movement platformer games and another entry on my ever-growing list of puzzle games.
+        </span>
+
+        <span class="page-header">Uploads</span>
+        <div class="row">
+            <div class="col w5">
+                <img class="project-image" src="/img/claret/claret-upload1.png" loading="lazy">
+                <img class="project-image" src="/img/claret/claret-upload3.png" loading="lazy">
+            </div>
+            <div class="col w5">
+                <img class="project-image" src="/img/claret/claret-upload2.png" loading="lazy">
+                <img class="project-image" src="/img/claret/claret-upload4.png" loading="lazy">
+            </div>
+        </div>
+        `
+    );
+</script>
+
+</html>

@@ -488,3 +488,19 @@ sub {
         visibility: visible;
     }
 }
+
+
+#game-holder {
+    overflow: hidden;
+}
+
+#game-holder > iframe {
+    border: none; 
+    display: block; 
+    transform-origin: 0 0;
+    transform: scale(1);
+}
+
+#footer-links {
+    display: none;
+}

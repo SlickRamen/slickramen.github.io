@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project | martyn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <script src="/js/generate-project-page.js"></script>
+    <script src="/js/hamburger.js"></script>
+</head>
+
+<body>
+    <header id="navbar"></header> 
+    <script src="/js/generate-navbar.js" defer></script>
+    
+    <div class="page-content" id="content-holder"></div>
+
+    <footer id="footer"></footer>
+</body>
+
+<script>
+    generateProjectPageLayout(
+        "ULTRAFORCE: OBLITERATION",
+        "Save the world from the invading aliens",
+        [
+            { url: "https://stepford.itch.io/ultra-force-obliteration", text: "Link to itch.io", type:"itchio"}
+        ],
+        "/img/ultraforce.png",
+        `
+        <span class="page-header">Pitch</span>
+        <span class="page-body">
+            Spaceships litter the skies. Alien forces have come to eradicate human life. Who will stand against them? 
+            Who will answer the call to action? ULTRA FORCE has been called in. And even if the chances of victory are slim, they aren't going down without a fight.
+        </span>
+
+        <span class="page-header">Development</span>
+        <span class="page-body">
+            This endless, point-hoarding, vertical shooter created for the OperaGX Jam 2021, where the game had to be kept beneath 5 megabytes and have multiplayer & highscore functionality.
+            I worked on it with some friends from the content hosting site Newgrounds. The constraints made us think in interesting ways and act more cautiously. One of the highlights
+            for me was the upgrade system, where the player can pick from a pool of augments that change things such as how the weapons act and feel. This is the second(ish) installment in
+            my "shoot-em-up" game catalogue (which I may expand in the future).
+        </span>
+
+        <span class="page-header">Uploads</span>
+        <div class="row">
+            <div class="col w5">
+                <img class="project-image" src="/img/ultraforce.png" loading="lazy">
+            </div>
+            <div class="col w5">
+                <img class="project-image" src="/img/ultraforce.png" loading="lazy">
+            </div>
+        </div>
+        `
+    );
+</script>
+
+</html>
