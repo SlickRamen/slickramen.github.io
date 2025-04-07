@@ -95,7 +95,7 @@
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    line-break: anywhere;
+    line-break: auto;
 }
 
 .skill-icon-holder {
@@ -107,7 +107,7 @@
     font-size: 1rem;
     font-weight: normal;
     color: #808080;
-    line-break: anywhere;
+    line-break: auto;
 }
 
 .skill-beans {
