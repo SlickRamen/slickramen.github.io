@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project | martyn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <script src="/js/generate-project-page.js"></script>
+    <script src="/js/hamburger.js"></script>
+</head>
+
+<body>
+    <header id="navbar"></header> 
+    <script src="/js/generate-navbar.js" defer></script>
+    
+    <div class="page-content" id="content-holder"></div>
+
+    <script src="/js/resize-game-iframe.js" defer></script>
+
+    <footer id="footer"></footer>
+</body>
+
+<script>
+    generateProjectPageLayout(
+        "Sunnyside vs. the Eggies",
+        "Defeat endless waves of egg-based enemies",
+        [
+            { url: "https://stepford.itch.io/sunnyside", text: "Link to itch.io", type:"itchio"}
+        ],
+        "/img/sunnyside.png",
+        `
+        <div id="game-holder" data-width="1280" data-height="720">
+            <iframe 
+                src="game/sunnyside/index.html" 
+                width="100%"
+                height="100%"
+                style="border:none;">
+            </iframe>
+        </div>
+        <span class="page-note">Note: Game doesn't work on mobile. Please play on desktop.</span>
+
+        <span class="page-header">Pitch</span>
+        <span class="page-body">
+            Sunnyside is a farmer who lives in Monkey World. One day he goes outside to pick from
+            his banana trees only to be levitated up from the ground and abducted by egg aliens.
+            Filled with rage and egg hatred he must make his way through floor after floor of the
+            mothership. Blasting egg aliens and spilling their yolk all over the walls in this endless
+            sidescrolling shoot-em-up roguelike!
+        </span>
+
+        <span class="page-header">Development</span>
+        <span class="page-body">
+            This game was another collaboration with my buddy Stepford. We created it in under 10 days for a game jam on the content hosting site Newgrounds. We agreed early on that we wanted to
+            make an endless roguelike shooter. I'm really happy with the final product and I hope to remake this game someday.
+        </span>
+
+        <span class="page-header">Uploads</span>
+        <div class="row">
+            <div class="col w5">
+                <img class="project-image" src="/img/sunnyside/sunnyside-upload1.png" loading="lazy">
+                <img class="project-image" src="/img/sunnyside/sunnyside-upload3.png" loading="lazy">
+                <img class="project-image" src="/img/sunnyside/sunnyside-upload5.png" loading="lazy">
+            </div>
+            <div class="col w5">
+                <img class="project-image" src="/img/sunnyside/sunnyside-upload2.png" loading="lazy">
+                <img class="project-image" src="/img/sunnyside/sunnyside-upload4.png" loading="lazy">
+                <img class="project-image" src="/img/sunnyside/sunnyside-upload6.png" loading="lazy">
+            </div>
+        </div>
+        `
+    );
+</script>
+
+</html>

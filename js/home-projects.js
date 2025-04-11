@@ -62,7 +62,7 @@ const projects = [
         year: "2024",
         image: "alchemess2.png",
         links: [
-            // { url: "https://itch.io", text: "Link to itch.io", type: "itchio" },
+            { url: "https://slickramen.itch.io/alchemess", text: "Link to itch.io", type: "itchio" },
             { url: "/page-alchemess", text: "More Info" }
         ]
     },

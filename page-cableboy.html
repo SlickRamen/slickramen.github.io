@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project | martyn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <script src="/js/generate-project-page.js"></script>
+    <script src="/js/hamburger.js"></script>
+</head>
+
+<body>
+    <header id="navbar"></header> 
+    <script src="/js/generate-navbar.js" defer></script>
+    
+    <div class="page-content" id="content-holder"></div>
+
+    <script src="/js/resize-game-iframe.js" defer></script>
+
+    <footer id="footer"></footer>
+</body>
+
+<script>
+    generateProjectPageLayout(
+        "Cable Boy",
+        "Connect cables to operate contraptions and clear the path ahead",
+        [
+            { url: "https://stepford.itch.io/cable-boy", text: "Link to itch.io", type:"itchio"}
+        ],
+        "/img/cableboy.png",
+        `
+        <div id="game-holder" data-width="1281" data-height="724">
+            <iframe 
+                src="game/cableboy/index.html" 
+                width="100%"
+                height="100%"
+                style="border:none;">
+            </iframe>
+        </div>
+        <span class="page-note">Note: Game doesn't work on mobile. Please play on desktop.</span>
+
+        <span class="page-header">Pitch</span>
+        <span class="page-body">
+            Cable Boy puts you in the electric boots of a cable head guy trying to find his girlfriend. 
+            You'll have to be a skilled platformerer to make it through this small LIGHTNING fast game (that was made in 48 hours!)
+        </span>
+
+        <span class="page-header">Development</span>
+        <span class="page-body">
+            This was made in 48 hours for the Gamemaker's Toolkit game jam. Yet another puzzle game, although I really liked the mechanics that were on offer and the overall concept felt super unique and fresh.
+            Unfortunately due to the 48 hour limit, we didn't have much time to explore the puzzle aspects deeper.
+        </span>
+
+        <span class="page-header">Uploads</span>
+        <div class="row">
+            <div class="col w5">
+                <img class="project-image" src="/img/cableboy/cableboy-upload1.png" loading="lazy">
+                <img class="project-image" src="/img/cableboy/cableboy-upload3.png" loading="lazy">
+            </div>
+            <div class="col w5">
+                <img class="project-image" src="/img/cableboy/cableboy-upload2.png" loading="lazy">
+            </div>
+        </div>
+        `
+    );
+</script>
+
+</html>

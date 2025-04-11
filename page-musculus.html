@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project | martyn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <script src="/js/generate-project-page.js"></script>
+    <script src="/js/hamburger.js"></script>
+</head>
+
+<body>
+    <header id="navbar"></header> 
+    <script src="/js/generate-navbar.js" defer></script>
+    
+    <div class="page-content" id="content-holder"></div>
+
+    <script src="/js/resize-game-iframe.js" defer></script>
+
+    <footer id="footer"></footer>
+</body>
+
+<script>
+    generateProjectPageLayout(
+        "Musculus",
+        "Control lab rats to solve logic problems",
+        [
+            { url: "https://stepford.itch.io/musculus", text: "Link to itch.io", type:"itchio"}
+        ],
+        "/img/musculus.png",
+        `
+
+        <span class="page-header">Pitch</span>
+        <span class="page-body">
+            The game is puzzle platformer where you control mice and rats through logistic problems, 
+            where every time you restart the level, the previous rat continues along its path remembering what you did last time - with several bumps along the way.
+        </span>
+
+        <span class="page-header">Development</span>
+        <span class="page-body">
+            This game was made in 3 days for a pretty big game jam, where it placed 15th overall out of rougly 1000 submissions (it placed 4th overall for fun!). It is by far one of my favourite
+            game concepts I've ever finished, and I worked with one of my longstanding game-dev buddies Stepford on it. The premise seemed to form itself during development, and the concept of
+            controlling multiple batches of "lab rats" was fitting thematically and also resulted in some really fun puzzle elements.
+        </span>
+
+        <span class="page-header">Uploads</span>
+        <div class="row">
+            <div class="col w5">
+                <img class="project-image" src="/img/musculus/musculus-upload1.png" loading="lazy">
+                <img class="project-image" src="/img/musculus/musculus-upload3.png" loading="lazy">
+            </div>
+            <div class="col w5">
+                <img class="project-image" src="/img/musculus/musculus-upload2.png" loading="lazy">
+                <img class="project-image" src="/img/musculus/musculus-upload4.gif" loading="lazy">
+            </div>
+        </div>
+        `
+    );
+</script>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project | martyn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <script src="/js/generate-project-page.js"></script>
+    <script src="/js/hamburger.js"></script>
+</head>
+
+<body>
+    <header id="navbar"></header> 
+    <script src="/js/generate-navbar.js" defer></script>
+    
+    <div class="page-content" id="content-holder"></div>
+
+    <script src="/js/resize-game-iframe.js" defer></script>
+
+    <footer id="footer"></footer>
+</body>
+
+<script>
+    generateProjectPageLayout(
+        "BLAMM",
+        "One-button wave-based platform-shooter",
+        [
+            { url: "https://slickramen.itch.io/blamm", text: "Link to itch.io", type:"itchio"}
+        ],
+        "/img/blamm.png",
+        `
+
+        <span class="page-header">Pitch</span>
+        <span class="page-body">
+            Use your gun to move around the map as you blast enemies!
+        </span>
+
+        <span class="page-header">Development</span>
+        <span class="page-body">
+            This game was the second proper game that I ever released. I made it for a jam where the whole premise was that you can only use a single button to control the entire game.
+            This was super challenging, but I think I pulled it off. I wanted to make a fairly complicated game and so my solution to the one-button problem was to treat button actions such as single press and hold
+            differently.
+        </span>
+
+        <span class="page-header">Uploads</span>
+        <div class="row">
+            <div class="col w5">
+                <img class="project-image" src="/img/blamm/blamm-upload2.png" loading="lazy">
+                <img class="project-image" src="/img/blamm/blamm-upload1.png" loading="lazy">
+            </div>
+            <div class="col w5">
+                <img class="project-image" src="/img/blamm/blamm-upload3.png" loading="lazy">
+                <img class="project-image" src="/img/blamm/blamm-upload4.png" loading="lazy">
+            </div>
+        </div>
+        `
+    );
+</script>
+
+</html>

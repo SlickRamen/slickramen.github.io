@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project | martyn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <script src="/js/generate-project-page.js"></script>
+    <script src="/js/hamburger.js"></script>
+</head>
+
+<body>
+    <header id="navbar"></header> 
+    <script src="/js/generate-navbar.js" defer></script>
+    
+    <div class="page-content" id="content-holder"></div>
+
+    <script src="/js/resize-game-iframe.js" defer></script>
+
+    <footer id="footer"></footer>
+</body>
+
+<script>
+    generateProjectPageLayout(
+        "Realms of Requiem",
+        "A byte-sized turnbased action adventure",
+        [
+            { url: "https://slickramen.itch.io/realms-of-requiem", text: "Link to itch.io", type:"itchio"}
+        ],
+        "/img/realmsofrequiem.png",
+        `
+
+        <span class="page-header">Pitch</span>
+        <span class="page-body">
+            Mysteriously thrust back in time, you awake in a desolate landscape, not knowing were, or when you are. You are a nobody, to the extent that you don't even know who you truly are. 
+            Dazed, Confused and looking for answers, you must scour the strange lands that you now inhabit for any hopes of getting back to whatever life you had previously. 
+            You know that where you reside currently is not familiar, but you have no memory of your past life.
+        </span>
+
+        <span class="page-header">Development</span>
+        <span class="page-body">
+            This game was another one of my earlier game jam games, however it was the biggest project that I'd attempted and successfully finished at the time. I finished it in under a week and was very happy with the result.
+            I was inspired by early turnbased action RPGs, and the timeframe of the jam allowed me to attempt something larger than I usually would. A lot of the gameplay systems were unfamiliar to me at the time
+            and I was figuring it out as I went, but I think the game turned out pretty cool in the end.
+        </span>
+
+        <span class="page-header">Uploads</span>
+        <div class="row">
+            <div class="col w5">
+                <img class="project-image" src="/img/ror/ror-upload1.gif" loading="lazy">
+            </div>
+            <div class="col w5">
+                <img class="project-image" src="/img/ror/ror-upload2.gif" loading="lazy">
+            </div>
+        </div>
+        `
+    );
+</script>
+
+</html>

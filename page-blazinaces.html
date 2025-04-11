@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project | martyn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <script src="/js/generate-project-page.js"></script>
+    <script src="/js/hamburger.js"></script>
+</head>
+
+<body>
+    <header id="navbar"></header> 
+    <script src="/js/generate-navbar.js" defer></script>
+    
+    <div class="page-content" id="content-holder"></div>
+
+    <script src="/js/resize-game-iframe.js" defer></script>
+
+    <footer id="footer"></footer>
+</body>
+
+<script>
+    generateProjectPageLayout(
+        "Blazin' Aces",
+        "Control the skies as a legendary ace pilot",
+        [
+            { url: "https://slickramen.itch.io/blazin-aces-game", text: "Link to itch.io", type:"itchio"}
+        ],
+        "/img/blazinaces.png",
+        `
+
+        <span class="page-header">Pitch</span>
+        <span class="page-body">
+            A simple "shoot-em-up" with the goal of securing your place as a top ace pilot.
+        </span>
+
+        <span class="page-header">Development</span>
+        <span class="page-body">
+            This game was the first proper game that I ever released. I made it in under a day for a game jam (which it ended up winning!) and it was the beginning of my
+            game development journey. Looking back at it, I see a lot that I'd change if I were to make it today. However, being my first game, I can't be too critical of it!
+        </span>
+
+        <span class="page-header">Uploads</span>
+        <div class="row">
+        </div>
+        `
+    );
+</script>
+
+</html>
