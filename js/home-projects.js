@@ -13,17 +13,17 @@ const projects = [
             { url: "/page-homehelper", text: "More Info" }
         ]
     },
-    {
-        name: "Bloodshot",
-        subtitle: "Game, Windows",
-        year: "tbc",
-        image: "bloodshot.png",
-        links: [
-            // { url: "https://itch.io", text: "Presskit", type: "redirect"},
-            // { url: "/more-info", text: "Publisher Demo", type: "redirect"},
-            { url: "/page-bloodshot", text: "More Info" }
-        ]
-    },
+    // {
+    //     name: "Bloodshot",
+    //     subtitle: "Game, Windows",
+    //     year: "tbc",
+    //     image: "bloodshot.png",
+    //     links: [
+    //         // { url: "https://itch.io", text: "Presskit", type: "redirect"},
+    //         // { url: "/more-info", text: "Publisher Demo", type: "redirect"},
+    //         { url: "/page-bloodshot", text: "More Info" }
+    //     ]
+    // },
     {
         name: "Gromit",
         subtitle: "Application, Windows",
@@ -34,16 +34,16 @@ const projects = [
             { url: "/page-gromit", text: "More Info" }
         ]
     },
-    {
-        name: "Sugoi",
-        subtitle: "Game, Windows",
-        year: "2025",
-        image: "sugoi.png",
-        links: [
-            // { url: "https://itch.io", text: "Link to itch.io", type: "itchio" },
-            { url: "/more-info", text: "More Info" }
-        ]
-    },
+    // {
+    //     name: "Sugoi",
+    //     subtitle: "Game, Windows",
+    //     year: "2025",
+    //     image: "sugoi.png",
+    //     links: [
+    //         // { url: "https://itch.io", text: "Link to itch.io", type: "itchio" },
+    //         { url: "/more-info", text: "More Info" }
+    //     ]
+    // },
     { divider: true, divider_id: "tab2024", name: "2024 Works" },
     {
         name: "Grape Expectations!",

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project | martyn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <script src="/js/generate-project-page.js"></script>
+    <script src="/js/hamburger.js"></script>
+</head>
+
+<body>
+    <header id="navbar"></header> 
+    <script src="/js/generate-navbar.js" defer></script>
+    
+    <div class="page-content" id="content-holder"></div>
+
+    <footer id="footer"></footer>
+</body>
+
+<script>
+    generateProjectPageLayout(
+        "Bloodshot",
+        "WIP Roguelike",
+        [
+            { url: "https://slickramen.itch.io/alchemess", text: "Link to itch.io", type:"itchio"}
+        ],
+        "/img/bloodshot.png",
+        `
+        <span class="page-header">Pitch</span>
+        <span class="page-body">
+            A magic, potion-crafting, imp-summoning puzzle game! You're an alchemist that has to summon imps to complete puzzles. Different imps can be summoned by crafting different potions.
+            Find new ingredients and discover new imps!
+        </span>
+
+        <span class="page-header">Development</span>
+        <span class="page-body">
+            This game was made for the 55th Ludum Dare game jam. It was made over the course of 3 days. The jam version wasn't fully finished but showed off enough of the mechanics and was playable.
+        </span>
+
+        <span class="page-header">Uploads</span>
+        <div class="row">
+            <div class="col w5">
+                <img class="project-image" src="/img/alchemess2.png" loading="lazy">
+            </div>
+            <div class="col w5">
+                <img class="project-image" src="/img/alchemess.png" loading="lazy">
+            </div>
+        </div>
+        `
+    );
+</script>
+
+</html>
