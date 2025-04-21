@@ -1,10 +1,6 @@
 const windowSize = 800;
 let selectedIndex = 0;
 
-let dragging = false;
-let startX = 0;
-let currentX = 0;
-
 let pages = document.querySelectorAll('.page');
 
 /**
@@ -114,41 +110,6 @@ window.addEventListener('wheel', (event) => {
 
     // Update the selected index
     updateSelectedIndex(selectedIndex);
-});
-
-window.addEventListener('mousedown', (event) => {
-    dragging = true;
-    startX = event.clientX;
-});
-
-window.addEventListener('mouseup', (event) => { 
-    dragging = false;
-});
-
-window.addEventListener('mousemove', (event) => {   
-    event.preventDefault
-    if (dragging) {
-        const mediaQuery = window.matchMedia(`(max-width: ${windowSize}px)`);
-
-        if (mediaQuery.matches) {
-            return;
-        }
-
-        currentX = event.clientX;
-        const deltaX = currentX - startX;
-
-        // Calculate the new index based on the drag distance
-        let newIndex = Math.round(selectedIndex - deltaX / 100);
-        newIndex = Math.min(Math.max(newIndex, 0), pages.length - 1);
-
-        // Update the selected index
-        if (newIndex !== selectedIndex) {
-            selectedIndex = newIndex;
-            startX = currentX; // Reset startX to the current position
-            updateSelectedIndex(selectedIndex);
-        }
-
-    }
 });
 
 /**
