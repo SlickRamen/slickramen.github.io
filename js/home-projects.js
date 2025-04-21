@@ -4,9 +4,19 @@
 const projects = [
     { divider: true, divider_id: "tab2025", name: "Current Projects", subtitle: "Completed or Working on" },
     {
-        name: "Home Helper",
-        subtitle: "Application, Windows",
+        name: "Weeklinks",
+        subtitle: "Application, Web",
         year: "tbc",
+        image: "gromit.png",
+        links: [
+            // { url: "https://github.com/SlickRamen/gromit", text: "Github Repository", type: "github"},
+            { url: "/page-weeklinks", text: "More Info" }
+        ]
+    },
+    {
+        name: "Home Helper",
+        subtitle: "Application, Web",
+        year: "2025 Q4",
         image: "homehelper.png",
         links: [
             { url: "https://github.com/SlickRamen", text: "Github Repository", type: "github"},
@@ -34,6 +44,16 @@ const projects = [
             { url: "/page-gromit", text: "More Info" }
         ]
     },
+    {
+        name: "Git Contribution Graph",
+        subtitle: "Element, Web",
+        year: "2025",
+        image: "gitcontribution.png",
+        links: [
+            { url: "https://github.com/SlickRamen/git-contribution-graph", text: "Github Repository", type: "github"},
+            { url: "/page-gitcontribution", text: "More Info" }
+        ]
+    },
     // {
     //     name: "Sugoi",
     //     subtitle: "Game, Windows",
@@ -47,7 +67,7 @@ const projects = [
     { divider: true, divider_id: "tab2024", name: "2024 Works" },
     {
         name: "Grape Expectations!",
-        subtitle: "Application, Linux",
+        subtitle: "Application, Linux / Windows",
         year: "2024",
         image: "grape.jpg",
         links: [
@@ -58,7 +78,7 @@ const projects = [
     },
     {
         name: "Alchemess",
-        subtitle: "Game, Windows, Web",
+        subtitle: "Game, Windows / Web",
         year: "2024",
         image: "alchemess2.png",
         links: [
@@ -69,7 +89,7 @@ const projects = [
     { divider: true, divider_id: "tab2022", name: "2022 Works" },
     {
         name: "Peter's Quest",
-        subtitle: "Game, Windows, Web",
+        subtitle: "Game, Windows / Web",
         year: "2022",
         image: "petersquest.png",
         links: [
@@ -80,7 +100,7 @@ const projects = [
     { divider: true, divider_id: "tab2021", name: "2021 Works" },
     {
         name: "ULTRAFORCE: OBLITERATION",
-        subtitle: "Game, Windows, Web",
+        subtitle: "Game, Windows / Web",
         year: "2021",
         image: "ultraforce.png",
         links: [
@@ -119,7 +139,7 @@ const projects = [
     },
     {
         name: "Cable Boy",
-        subtitle: "Game, Windows",
+        subtitle: "Game, Windows / Web",
         year: "2021",
         image: "cableboy.png",
         links: [

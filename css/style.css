@@ -178,6 +178,8 @@ a {
     margin: -30px;
     width: 320px;
     height: 240px;
+
+    user-select: none;
 }
 
 @keyframes skeleton-loading {
@@ -204,6 +206,7 @@ a {
     object-fit: cover;
     object-position: center;
     transition: opacity 0.2s ease;
+    -webkit-user-drag: none ;
 }
 
 .page.selected > .page-image,

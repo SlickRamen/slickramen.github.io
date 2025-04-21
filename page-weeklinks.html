@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project | martyn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <script src="/js/generate-project-page.js"></script>
+    <script src="/js/hamburger.js"></script>
+</head>
+
+<body>
+    <header id="navbar"></header> 
+    <script src="/js/generate-navbar.js" defer></script>
+    
+    <div class="page-content" id="content-holder"></div>
+
+    <footer id="footer"></footer>
+</body>
+
+<script>
+    generateProjectPageLayout(
+        "Weeklinks",
+        "A flat management tool for your weekly tasks",
+        [
+            // { url: "https://github.com/SlickRamen/gromit", text: "Github Repository", type: "github"},
+        ],
+        "/img/gromit.png",
+        `
+        <span class="page-header">Pitch</span>
+        <span class="page-body">
+            Planning and managing a flat can be a daunting task, especially when it comes to dividing out chores, expenses, and other responsibilities. 
+            Weeklinks is a web application that aims to simplify this process by providing a user-friendly interface for managing flat-related tasks.
+            It allows you to manage flat jobs, expenses and routines, and promote better communication amongst flatmates. 
+            It aims to help with all of the heavy lifting behind-the-scenes to help keep your flat running smoothly.
+
+            Some planned features include:
+            <ul style="list-style-type: disc;">
+                <li>Calendar for scheduling events</li>
+                <li>Combined shopping lists</li>
+                <li>Managing payments for rent, power, water and shopping</li>
+                <li>Flat chats and polls for a seamless in-app experience</li>
+                <li>Schedule / routine manager to keep track of chores and weekly meals</li>
+                <li>Flat notice board to keep track of important information</li>
+            </ul>
+        </span>
+
+        <span class="page-header">Development</span>
+        <span class="page-body">
+            I am currently in the early stages of developing this application with my brother as a means to help manage my
+            own flat. After living in a flat for the past 3 years, I have found that keeping ontop of tasks and chores can
+            be difficult, especially when all of the information isn't compiled in one place. By creating this application,
+            I hope to be able to help myself and others manage their flats more effectively, by combining important
+            flat information into one place, such as combined cards, expenses such as rent and power, shopping lists and
+            chores. By creating an app designed to do some of the heavy lifting in terms of organization in the background,
+            I hope to be able to lead a more organized and stress-free life in my flat.
+            <br><br>
+            The application is very early days, and is currently being developed in Java and Spring Boot. It was initially
+            devised as a joint shopping list application, however necessity bred innovation and its purpose has since evolved
+            to better suit my current needs.
+        </span>
+        `
+    );
+</script>
+
+</html>
