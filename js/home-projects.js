@@ -14,6 +14,16 @@ const projects = [
         ]
     },
     {
+        name: "GAMEDIR",
+        subtitle: "Application, Web",
+        year: "tbc",
+        image: "gamedir.png",
+        links: [
+            { url: "https://github.com/SlickRamen/gamedir", text: "Github Repository", type: "github"},
+            { url: "/page-gamedir", text: "More Info" }
+        ]
+    },
+    {
         name: "Home Helper",
         subtitle: "Application, Web",
         year: "2025 Q4",
@@ -35,12 +45,22 @@ const projects = [
     //     ]
     // },
     {
+        name: "RIP Routing Implementation",
+        subtitle: "Application, Windows",
+        year: "2025",
+        image: "pta.png",
+        links: [
+            { url: "https://github.com/maxwmoir/rip-project", text: "Github Repository", type: "github"},
+            { url: "/page-rip", text: "More Info" }
+        ]
+    },
+    {
         name: "Gromit",
         subtitle: "Application, Windows",
         year: "2025",
         image: "gromit.png",
         links: [
-            { url: "https://github.com/SlickRamen/gromit", text: "Github Repository", type: "github"},
+            { url: "https://github.com/SlickRamen/gromit-react", text: "Github Repository", type: "github"},
             { url: "/page-gromit", text: "More Info" }
         ]
     },
