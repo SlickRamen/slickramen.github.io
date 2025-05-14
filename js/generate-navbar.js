@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
         </a>
         <div class="links float-left" id="navbar-links">
             <a href="/">Home</a>
-            <a href="/workshop">Workshop</a>
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
         </div>
