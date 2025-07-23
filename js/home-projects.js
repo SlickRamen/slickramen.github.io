@@ -14,16 +14,6 @@ const projects = [
     //     ]
     // },
     {
-        name: "GAMEDIR",
-        subtitle: "Application, Web",
-        year: "tbc",
-        image: "gamedir.png",
-        links: [
-            { url: "https://github.com/SlickRamen/gamedir", text: "Github Repository", type: "github"},
-            { url: "/page-gamedir", text: "More Info" }
-        ]
-    },
-    {
         name: "Home Helper",
         subtitle: "Application, Web",
         year: "2025 Q4",
@@ -31,6 +21,16 @@ const projects = [
         links: [
             { url: "https://github.com/SlickRamen", text: "Github Repository", type: "github"},
             { url: "/page-homehelper", text: "More Info" }
+        ]
+    },
+    {
+        name: "GAMEDIR",
+        subtitle: "Application, Web",
+        year: "2025",
+        image: "gamedir.png",
+        links: [
+            { url: "https://github.com/SlickRamen/gamedir", text: "Github Repository", type: "github"},
+            { url: "/page-gamedir", text: "More Info" }
         ]
     },
     // {
