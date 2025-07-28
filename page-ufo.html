@@ -20,6 +20,8 @@
     
     <div class="page-content" id="content-holder"></div>
 
+    <script src="/js/resize-game-iframe.js" defer></script>
+
     <footer id="footer"></footer>
 </body>
 
@@ -32,6 +34,16 @@
         ],
         "/img/ultraforce.png",
         `
+        <div id="game-holder" data-width="1281" data-height="724">
+            <iframe 
+                src="game/ufo/index.html" 
+                width="100%"
+                height="100%"
+                style="border:none;">
+            </iframe>
+        </div>
+        <span class="page-note">Note: Game doesn't work on mobile. Please play on desktop.</span>
+
         <span class="page-header">Pitch</span>
         <span class="page-body">
             Spaceships litter the skies. Alien forces have come to eradicate human life. Who will stand against them? 
@@ -49,10 +61,12 @@
         <span class="page-header">Uploads</span>
         <div class="row">
             <div class="col w5">
-                <img class="project-image" src="/img/ultraforce.png" loading="lazy">
+                <img class="project-image" src="/img/ufo/ufo-upload1.png" loading="lazy">
+                <img class="project-image" src="/img/ufo/ufo-upload3.png" loading="lazy">
             </div>
             <div class="col w5">
-                <img class="project-image" src="/img/ultraforce.png" loading="lazy">
+                <img class="project-image" src="/img/ufo/ufo-upload2.png" loading="lazy">
+                <img class="project-image" src="/img/ufo/ufo-upload4.png" loading="lazy">
             </div>
         </div>
         `

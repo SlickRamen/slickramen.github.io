@@ -34,10 +34,10 @@ const projects = [
         ]
     },
     {
-        name:       "limaquest!",
+        name:       "Peter's Quest II",
         subtitle:   "Game, Windows",
         year:       "tbc",
-        image:      "limaquest.png",
+        image:      "petersquest2.png",
         links: [
             // { url: "https://itch.io", text: "Link to itch.io" },
             { url: "/more-info", text: "More Info" }
@@ -77,7 +77,7 @@ const projects = [
         name:       "Ticket to Hell",
         subtitle:   "Game, Windows",
         year:       "tbc",
-        image:      "acumen2.png",
+        image:      "pta.png",
         links: [
             // { url: "https://itch.io", text: "Link to itch.io" },
             { url: "/more-info", text: "More Info" }
