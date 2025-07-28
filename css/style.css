@@ -61,7 +61,7 @@ body {
 }
 
 header {
-    padding: 2rem;
+    padding: 1rem;
     background-color: var(--bg-color);
     width: 100%;
     display: flex;
@@ -71,7 +71,7 @@ header {
 }
 
 footer {
-    padding: 2rem;
+    padding: 1rem;
     padding-top: 1rem;
     background-color: var(--bg-color);
     width: 100%;

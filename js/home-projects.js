@@ -3,16 +3,16 @@
  */
 const projects = [
     { divider: true, divider_id: "tab2025", name: "Current Projects", subtitle: "Completed or Working on" },
-    {
-        name: "Weeklinks",
-        subtitle: "Application, Web",
-        year: "tbc",
-        image: "gromit.png",
-        links: [
-            // { url: "https://github.com/SlickRamen/gromit", text: "Github Repository", type: "github"},
-            { url: "/page-weeklinks", text: "More Info" }
-        ]
-    },
+    // {
+    //     name: "Weeklinks",
+    //     subtitle: "Application, Web",
+    //     year: "tbc",
+    //     image: "gromit.png",
+    //     links: [
+    //         // { url: "https://github.com/SlickRamen/gromit", text: "Github Repository", type: "github"},
+    //         { url: "/page-weeklinks", text: "More Info" }
+    //     ]
+    // },
     {
         name: "Home Helper",
         subtitle: "Application, Web",
@@ -21,6 +21,16 @@ const projects = [
         links: [
             { url: "https://github.com/SlickRamen", text: "Github Repository", type: "github"},
             { url: "/page-homehelper", text: "More Info" }
+        ]
+    },
+    {
+        name: "GAMEDIR",
+        subtitle: "Application, Web",
+        year: "2025",
+        image: "gamedir.png",
+        links: [
+            { url: "https://github.com/SlickRamen/gamedir", text: "Github Repository", type: "github"},
+            { url: "/page-gamedir", text: "More Info" }
         ]
     },
     // {
@@ -35,12 +45,22 @@ const projects = [
     //     ]
     // },
     {
+        name: "RIP Routing Implementation",
+        subtitle: "Application, Windows",
+        year: "2025",
+        image: "pta.png",
+        links: [
+            { url: "https://github.com/maxwmoir/rip-project", text: "Github Repository", type: "github"},
+            { url: "/page-rip", text: "More Info" }
+        ]
+    },
+    {
         name: "Gromit",
         subtitle: "Application, Windows",
         year: "2025",
         image: "gromit.png",
         links: [
-            { url: "https://github.com/SlickRamen/gromit", text: "Github Repository", type: "github"},
+            { url: "https://github.com/SlickRamen/gromit-react", text: "Github Repository", type: "github"},
             { url: "/page-gromit", text: "More Info" }
         ]
     },
@@ -84,6 +104,27 @@ const projects = [
         links: [
             { url: "https://slickramen.itch.io/alchemess", text: "Link to itch.io", type: "itchio" },
             { url: "/page-alchemess", text: "More Info" }
+        ]
+    },
+    { divider: true, divider_id: "tab2023", name: "2023 Works" },
+    {
+        name:       "Seedle",
+        subtitle:   "Game, Windows",
+        year:       "2023",
+        image:      "seedle.png",
+        links: [
+            // { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "/more-info", text: "More Info" }
+        ]
+    },
+    {
+        name:       "Roguebots",
+        subtitle:   "Game, Windows",
+        year:       "2023",
+        image:      "roguebots.png",
+        links: [
+            // { url: "https://itch.io", text: "Link to itch.io" },
+            { url: "/more-info", text: "More Info" }
         ]
     },
     { divider: true, divider_id: "tab2022", name: "2022 Works" },
@@ -218,16 +259,16 @@ const projects = [
             { url: "/page-terrene", text: "More Info" }
         ]
     },
-    {
-        name: "RED SPACE",
-        subtitle: "Game, Windows",
-        year: "2020",
-        image: "redspace.png",
-        links: [
-            { url: "https://slickramen.itch.io/redspace", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-redspace", text: "More Info" }
-        ]
-    },
+    // {
+    //     name: "RED SPACE",
+    //     subtitle: "Game, Windows",
+    //     year: "2020",
+    //     image: "redspace.png",
+    //     links: [
+    //         { url: "https://slickramen.itch.io/redspace", text: "Link to itch.io", type: "itchio" },
+    //         { url: "/page-redspace", text: "More Info" }
+    //     ]
+    // },
     {
         name: "Gun Gun",
         subtitle: "Game, Windows",
@@ -248,16 +289,16 @@ const projects = [
             { url: "/page-devastationnation", text: "More Info" }
         ]
     },
-    {
-        name: "100 Bullets",
-        subtitle: "Game, Windows",
-        year: "2019",
-        image: "100bullets.png",
-        links: [
-            { url: "https://slickramen.itch.io/100bullets", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-100bullets", text: "More Info" }
-        ]
-    },
+    // {
+    //     name: "100 Bullets",
+    //     subtitle: "Game, Windows",
+    //     year: "2019",
+    //     image: "100bullets.png",
+    //     links: [
+    //         { url: "https://slickramen.itch.io/100bullets", text: "Link to itch.io", type: "itchio" },
+    //         { url: "/page-100bullets", text: "More Info" }
+    //     ]
+    // },
     {
         name: "Realms of Requiem",
         subtitle: "Game, Windows",

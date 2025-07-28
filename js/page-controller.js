@@ -7,7 +7,7 @@ let pages = document.querySelectorAll('.page');
  * Setup all pages
  */
 pages.forEach((page, index) => {
-    page.style.zIndex = pages.length - index; // Higher index for pages in the front
+    page.style.zIndex = pages.length-index; // Higher index for pages in the front
 
     const offset = index * 50; // Offset increases for farther pages
     const scale = 0.5;
