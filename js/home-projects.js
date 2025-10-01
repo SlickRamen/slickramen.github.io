@@ -40,7 +40,7 @@ const projects = [
     //     image: "bloodshot.png",
     //     links: [
     //         // { url: "https://itch.io", text: "Presskit", type: "redirect"},
-    //         // { url: "/more-info", text: "Publisher Demo", type: "redirect"},
+    //         // { url: "/not-found", text: "Publisher Demo", type: "redirect"},
     //         { url: "/page-bloodshot", text: "More Info" }
     //     ]
     // },
@@ -81,7 +81,7 @@ const projects = [
     //     image: "sugoi.png",
     //     links: [
     //         // { url: "https://itch.io", text: "Link to itch.io", type: "itchio" },
-    //         { url: "/more-info", text: "More Info" }
+    //         { url: "/not-found", text: "More Info" }
     //     ]
     // },
     { divider: true, divider_id: "tab2024", name: "2024 Works" },
@@ -92,7 +92,7 @@ const projects = [
         image: "grape.jpg",
         links: [
             // { url: "https://itch.io", text: "Presskit", type: "redirect" },
-            // { url: "/more-info", text: "Publisher Demo", type: "redirect" },
+            // { url: "/not-found", text: "Publisher Demo", type: "redirect" },
             { url: "/page-grape", text: "More Info" }
         ]
     },
@@ -114,7 +114,7 @@ const projects = [
         image:      "seedle.png",
         links: [
             // { url: "https://itch.io", text: "Link to itch.io" },
-            { url: "/more-info", text: "More Info" }
+            { url: "/not-found", text: "More Info" }
         ]
     },
     {
@@ -124,7 +124,7 @@ const projects = [
         image:      "roguebots.png",
         links: [
             // { url: "https://itch.io", text: "Link to itch.io" },
-            { url: "/more-info", text: "More Info" }
+            { url: "/not-found", text: "More Info" }
         ]
     },
     { divider: true, divider_id: "tab2022", name: "2022 Works" },
@@ -216,7 +216,7 @@ const projects = [
     //     image: "acumen.png",
     //     links: [
     //         { url: "https://itch.io", text: "Link to itch.io", type: "itchio" },
-    //         { url: "/more-info", text: "More Info" }
+    //         { url: "/not-found", text: "More Info" }
     //     ]
     // },
     // {
@@ -226,7 +226,7 @@ const projects = [
     //     image: "bumpinthenight.png",
     //     links: [
     //         { url: "https://itch.io", text: "Link to itch.io", type: "itchio" },
-    //         { url: "/more-info", text: "More Info" }
+    //         { url: "/not-found", text: "More Info" }
     //     ]
     // },
     {
@@ -246,7 +246,7 @@ const projects = [
     //     image: "paperfort.png",
     //     links: [
     //         { url: "https://itch.io", text: "Link to itch.io", type: "itchio" },
-    //         { url: "/more-info", text: "More Info" }
+    //         { url: "/not-found", text: "More Info" }
     //     ]
     // },
     {
