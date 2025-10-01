@@ -1,4 +1,12 @@
-
+/**
+ * Helper function to generate a page layout.
+ * 
+ * @param {*} title page title
+ * @param {*} subtitle page subtitle
+ * @param {*} listOfLinks page links list
+ * @param {*} image page cover image
+ * @param {*} content page content as HTML
+ */
 function generateProjectPageLayout(title, subtitle, listOfLinks, image, content) {
     const holder = document.getElementById("content-holder");
     const container = document.createElement("div");
@@ -6,7 +14,7 @@ function generateProjectPageLayout(title, subtitle, listOfLinks, image, content)
 
     const links = (listOfLinks ?? [])
     .map(link => `<li class="link"><i class="icon-${link.type ?? 'link'} use-line-height"></i><a href="${link.url}">${link.text}</a></li>`)
-    .join(""); // Convert array to a string
+    .join("");
 
     container.innerHTML = `
     <img class="project-cover" src="${image ?? ""}" loading="lazy">

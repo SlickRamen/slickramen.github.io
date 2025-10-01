@@ -14,13 +14,22 @@ const projects = [
     //     ]
     // },
     {
-        name: "Home Helper",
+        name: "Hatch",
         subtitle: "Application, Web",
-        year: "2025 Q4",
-        image: "homehelper.png",
+        year: "2025",
+        image: "hatch.png",
         links: [
             { url: "https://github.com/SlickRamen", text: "Github Repository", type: "github"},
-            { url: "/page-homehelper", text: "More Info" }
+            { url: "/page-hatch", text: "More Info" }
+        ]
+    },
+    {
+        name: "Hatch Design",
+        subtitle: "Design, Figma",
+        year: "2025",
+        image: "hatch.png",
+        links: [
+            { url: "/page-hatch-design", text: "More Info" }
         ]
     },
     {
