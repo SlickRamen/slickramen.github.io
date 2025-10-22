@@ -10,7 +10,7 @@ const projects = [
     //     image: "gromit.png",
     //     links: [
     //         // { url: "https://github.com/SlickRamen/gromit", text: "Github Repository", type: "github"},
-    //         { url: "/page-weeklinks", text: "More Info" }
+    //         { url: "/projects/page-weeklinks", text: "More Info" }
     //     ]
     // },
     {
@@ -20,7 +20,7 @@ const projects = [
         image: "hatch.png",
         links: [
             { url: "https://github.com/SlickRamen", text: "Github Repository", type: "github"},
-            { url: "/page-hatch", text: "More Info" }
+            { url: "/projects/page-hatch", text: "More Info" }
         ]
     },
     {
@@ -29,7 +29,7 @@ const projects = [
         year: "2025",
         image: "hatch.png",
         links: [
-            { url: "/page-hatch-design", text: "More Info" }
+            { url: "/projects/page-hatch-design", text: "More Info" }
         ]
     },
     {
@@ -39,7 +39,7 @@ const projects = [
         image: "gamedir.png",
         links: [
             { url: "https://github.com/SlickRamen/gamedir", text: "Github Repository", type: "github"},
-            { url: "/page-gamedir", text: "More Info" }
+            { url: "/projects/projects/page-gamedir", text: "More Info" }
         ]
     },
     // {
@@ -50,7 +50,7 @@ const projects = [
     //     links: [
     //         // { url: "https://itch.io", text: "Presskit", type: "redirect"},
     //         // { url: "/not-found", text: "Publisher Demo", type: "redirect"},
-    //         { url: "/page-bloodshot", text: "More Info" }
+    //         { url: "/projects/page-bloodshot", text: "More Info" }
     //     ]
     // },
     {
@@ -60,7 +60,7 @@ const projects = [
         image: "pta.png",
         links: [
             { url: "https://github.com/maxwmoir/rip-project", text: "Github Repository", type: "github"},
-            { url: "/page-rip", text: "More Info" }
+            { url: "/projects/page-rip", text: "More Info" }
         ]
     },
     {
@@ -70,7 +70,7 @@ const projects = [
         image: "gromit.png",
         links: [
             { url: "https://github.com/SlickRamen/gromit-react", text: "Github Repository", type: "github"},
-            { url: "/page-gromit", text: "More Info" }
+            { url: "/projects/page-gromit", text: "More Info" }
         ]
     },
     {
@@ -80,7 +80,7 @@ const projects = [
         image: "gitcontribution.png",
         links: [
             { url: "https://github.com/SlickRamen/git-contribution-graph", text: "Github Repository", type: "github"},
-            { url: "/page-gitcontribution", text: "More Info" }
+            { url: "/projects/page-gitcontribution", text: "More Info" }
         ]
     },
     // {
@@ -102,7 +102,7 @@ const projects = [
         links: [
             // { url: "https://itch.io", text: "Presskit", type: "redirect" },
             // { url: "/not-found", text: "Publisher Demo", type: "redirect" },
-            { url: "/page-grape", text: "More Info" }
+            { url: "/projects/page-grape", text: "More Info" }
         ]
     },
     {
@@ -112,7 +112,7 @@ const projects = [
         image: "alchemess2.png",
         links: [
             { url: "https://slickramen.itch.io/alchemess", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-alchemess", text: "More Info" }
+            { url: "/projects/page-alchemess", text: "More Info" }
         ]
     },
     { divider: true, divider_id: "tab2023", name: "2023 Works" },
@@ -144,7 +144,7 @@ const projects = [
         image: "petersquest.png",
         links: [
             { url: "https://slickramen.itch.io/peters-quest", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-peters-quest", text: "More Info" }
+            { url: "/projects/page-peters-quest", text: "More Info" }
         ]
     },
     { divider: true, divider_id: "tab2021", name: "2021 Works" },
@@ -155,7 +155,7 @@ const projects = [
         image: "ultraforce.png",
         links: [
             { url: "https://stepford.itch.io/ultra-force-obliteration", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-ufo", text: "More Info" }
+            { url: "/projects/page-ufo", text: "More Info" }
         ]
     },
     {
@@ -164,7 +164,7 @@ const projects = [
         year: "2021",
         image: "ninja.png",
         links: [
-            { url: "/page-ninja", text: "More Info" }
+            { url: "/projects/page-ninja", text: "More Info" }
         ]
     },
     {
@@ -174,7 +174,7 @@ const projects = [
         image: "claret.png",
         links: [
             { url: "https://slickramen.itch.io/claret", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-claret", text: "More Info" }
+            { url: "/projects/page-claret", text: "More Info" }
         ]
     },
     {
@@ -184,7 +184,7 @@ const projects = [
         image: "sunnyside.png",
         links: [
             { url: "https://stepford.itch.io/sunnyside", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-sunnyside", text: "More Info" }
+            { url: "/projects/page-sunnyside", text: "More Info" }
         ]
     },
     {
@@ -194,7 +194,7 @@ const projects = [
         image: "cableboy.png",
         links: [
             { url: "https://stepford.itch.io/cable-boy", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-cableboy", text: "More Info" }
+            { url: "/projects/page-cableboy", text: "More Info" }
         ]
     },
     {
@@ -204,7 +204,7 @@ const projects = [
         image: "musculus.png",
         links: [
             { url: "https://stepford.itch.io/musculus", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-musculus", text: "More Info" }
+            { url: "/projects/page-musculus", text: "More Info" }
         ]
     },
     { divider: true, divider_id: "tab2020", name: "pre. 2020 Works" },
@@ -215,7 +215,7 @@ const projects = [
         image: "ceptor.png",
         links: [
             { url: "https://slickramen.itch.io/ceptor", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-ceptor", text: "More Info" }
+            { url: "/projects/page-ceptor", text: "More Info" }
         ]
     },
     // {
@@ -245,7 +245,7 @@ const projects = [
         image: "rogueroad.png",
         links: [
             { url: "https://stepford.itch.io/rogue-road", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-rogueroad", text: "More Info" }
+            { url: "/projects/page-rogueroad", text: "More Info" }
         ]
     },
     // {
@@ -265,7 +265,7 @@ const projects = [
         image: "terrene.png",
         links: [
             { url: "https://slickramen.itch.io/terrene", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-terrene", text: "More Info" }
+            { url: "/projects/page-terrene", text: "More Info" }
         ]
     },
     // {
@@ -275,7 +275,7 @@ const projects = [
     //     image: "redspace.png",
     //     links: [
     //         { url: "https://slickramen.itch.io/redspace", text: "Link to itch.io", type: "itchio" },
-    //         { url: "/page-redspace", text: "More Info" }
+    //         { url: "/projects/page-redspace", text: "More Info" }
     //     ]
     // },
     {
@@ -285,7 +285,7 @@ const projects = [
         image: "gungun.png",
         links: [
             { url: "https://slickramen.itch.io/gungun", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-gungun", text: "More Info" }
+            { url: "/projects/page-gungun", text: "More Info" }
         ]
     },
     {
@@ -295,7 +295,7 @@ const projects = [
         image: "devastationnation.png",
         links: [
             { url: "https://stepford.itch.io/devastation-nation", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-devastationnation", text: "More Info" }
+            { url: "/projects/page-devastationnation", text: "More Info" }
         ]
     },
     // {
@@ -305,7 +305,7 @@ const projects = [
     //     image: "100bullets.png",
     //     links: [
     //         { url: "https://slickramen.itch.io/100bullets", text: "Link to itch.io", type: "itchio" },
-    //         { url: "/page-100bullets", text: "More Info" }
+    //         { url: "/projects/page-100bullets", text: "More Info" }
     //     ]
     // },
     {
@@ -315,7 +315,7 @@ const projects = [
         image: "realmsofrequiem.png",
         links: [
             { url: "https://slickramen.itch.io/realms-of-requiem", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-ror", text: "More Info" }
+            { url: "/projects/page-ror", text: "More Info" }
         ]
     },
     {
@@ -325,7 +325,7 @@ const projects = [
         image: "blamm.png",
         links: [
             { url: "https://slickramen.itch.io/blamm", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-blamm", text: "More Info" }
+            { url: "/projects/page-blamm", text: "More Info" }
         ]
     },
     {
@@ -335,7 +335,7 @@ const projects = [
         image: "blazinaces.png",
         links: [
             { url: "https://slickramen.itch.io/blazin-aces-game", text: "Link to itch.io", type: "itchio" },
-            { url: "/page-blazinaces", text: "More Info" }
+            { url: "/projects/page-blazinaces", text: "More Info" }
         ]
     }
 ];
