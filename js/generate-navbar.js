@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         footer.innerHTML = `
         <div class="links">
             <a class="optional" href="https://github.com/SlickRamen"><i class="icon-github" style="margin-right: 5px;"></i>GitHub</a>
-            <a class="optional" href="https://www.linkedin.com/in/martyn-gascoigne-7732772a8/"><i class="icon-linkedin" style="margin-right: 5px;"></i>LinkedIn</a>
+            <a class="optional" href="https://www.linkedin.com/in/martyn-gascoigne/"><i class="icon-linkedin" style="margin-right: 5px;"></i>LinkedIn</a>
             <a class="optional" href="#"><i class="icon-email" style="margin-right: 5px;"></i>Email</a>
             <span class="optional">|</span>
             ${links}
