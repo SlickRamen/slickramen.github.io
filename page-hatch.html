@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project | martyn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <script src="/js/generate-project-page.js"></script>
+    <script src="/js/hamburger.js"></script>
+</head>
+
+<body>
+    <header id="navbar"></header> 
+    <script src="/js/generate-navbar.js" defer></script>
+    
+    <div class="page-content" id="content-holder"></div>
+
+    <footer id="footer"></footer>
+</body>
+
+<script>
+    generateProjectPageLayout(
+        "Hatch",
+        "Hatching new ideas - Renovation inspiration and project management application",
+        [
+            { url: "https://github.com/SlickRamen/gromit-react", text: "Github Repository", type: "github"},
+        ],
+        "/img/hatch.png",
+        `
+        <span class="page-header">Pitch</span>
+        <span class="page-body">
+            Home Helper is designed to cater to the needs of DIY enthusiasts and professional tradespeople, providing an all-in-one platform to simplify renovation and home improvement tasks. 
+            The app offers a plethora of tools to assist users in planning and managing renovation projects such as:
+            <ul style="list-style-type: disc;">
+                <li>Project calendar to track and manage tasks</li>
+                <li>Kanban-style board to manage task states</li>
+                <li>Room furnishing planner for visualizing spaces</li>
+                <li>User-uploaded inspiration content to inspire your renovation</li>
+                <li>Managing inspiration on a per-renovation basis with groups</li>
+                <li>Sharing and searching renovations with tags</li>
+            </ul>
+            The app is designed to be user-friendly and intuitive, making it easy for anyone to use, regardless of their level of experience with home renovations.
+        </span>
+
+        <span class="page-header">Development</span>
+        <span class="page-body">
+            The application concluded development in September of 2025. It was developed by a small group of University students for the course SENG302. 
+            It is programmed in Java and uses Spring Boot and Thymeleaf for the backend and frontend respectively.
+            It was developed using a Scrum development framework, with a total of 6 3-week sprints taking place. The first 3 sprints featured user stories
+            devised by the Product Owner, and the remainder of the sprints focused on stories from the team's own product vision.
+        </span>
+
+        <span class="page-header">Team Members</span>
+        <span class="page-body">
+            Below is a list of the team members who worked on this project:
+            <ul style="list-style-type: disc;">
+                <li>Alex Wilson</li>
+                <li>Judy Kim</li>
+                <li>Jacob Sheridan</li>
+                <li>Abilash Sivasith</li>
+                <li>Suyeon Park</li>
+                <li>Cole Bramwell</li>
+                <li>Martyn Gascoigne</li>
+            </ul>
+        </span>
+
+        <span class="page-header">Uploads</span>
+        <div class="row">
+            <div class="col w5">
+                <img class="project-image" src="/img/hatch/hatch-upload1.png" loading="lazy">
+                <img class="project-image" src="/img/hatch/hatch-upload3.png" loading="lazy">
+                <img class="project-image" src="/img/hatch/hatch-upload5.png" loading="lazy">
+            </div>
+            <div class="col w5">
+                <img class="project-image" src="/img/hatch/hatch-upload2.png" loading="lazy">
+                <img class="project-image" src="/img/hatch/hatch-upload4.png" loading="lazy">
+                <img class="project-image" src="/img/hatch/hatch-upload6.png" loading="lazy">
+            </div>
+        </div>
+        `
+    );
+</script>
+
+</html>

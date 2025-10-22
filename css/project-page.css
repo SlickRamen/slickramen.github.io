@@ -10,6 +10,7 @@
     font-size: 1.25rem;
     font-weight: normal;
     color: #808080;
+    font-style: italic;
 }
 
 .page-note {
@@ -28,11 +29,13 @@
 .page-cta {
     font-size: 1.25rem;
     font-weight: normal;
+    opacity: 80%;
 }
 
 .page-body {
     font-size: 1.25rem;
     font-weight: normal;
+    opacity: 80%;
 }
 
 .project-image {

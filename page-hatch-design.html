@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project | martyn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <script src="/js/generate-project-page.js"></script>
+    <script src="/js/hamburger.js"></script>
+</head>
+
+<body>
+    <header id="navbar"></header> 
+    <script src="/js/generate-navbar.js" defer></script>
+    
+    <div class="page-content" id="content-holder"></div>
+
+    <footer id="footer"></footer>
+</body>
+
+<script>
+    generateProjectPageLayout(
+        "Hatch Design",
+        "Design for the Hatch App",
+        [
+            { url: "https://github.com/SlickRamen/gromit-react", text: "Github Repository", type: "github"},
+        ],
+        "/img/hatch.png",
+        `
+        <span class="page-header">Process</span>
+        <span class="page-body">
+            Below are some design concepts / icons I did for Hatch with Figma. Hatch is a web app developed by a small group of University students for the course SENG302. Learn more about it <a href="page-hatch">here</a>.
+        </span>
+
+        <span class="page-header">Uploads</span>
+        <div class="row">
+            <div class="col w5">
+                <img class="project-image" src="/img/hatch-design/hatch-design-upload1.png" loading="lazy">
+                <img class="project-image" src="/img/hatch-design/hatch-design-upload3.png" loading="lazy">
+                <img class="project-image" src="/img/hatch-design/hatch-design-upload5.png" loading="lazy">
+            </div>
+            <div class="col w5">
+                <img class="project-image" src="/img/hatch-design/hatch-design-upload2.png" loading="lazy">
+                <img class="project-image" src="/img/hatch-design/hatch-design-upload4.png" loading="lazy">
+                <img class="project-image" src="/img/hatch-design/hatch-design-upload6.png" loading="lazy">
+            </div>
+        </div>
+        `
+    );
+</script>
+
+</html>
