@@ -39,7 +39,7 @@ const projects = [
         image: "gamedir.png",
         links: [
             { url: "https://github.com/SlickRamen/gamedir", text: "Github Repository", type: "github"},
-            { url: "/projects/projects/page-gamedir", text: "More Info" }
+            { url: "/projects/page-gamedir", text: "More Info" }
         ]
     },
     // {
