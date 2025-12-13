@@ -16,6 +16,8 @@
 
     --color-hard: #f8615c;
     --color-hard-dim: #f8615c6b;
+
+    --atlassian-blue: #2668ca;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,6 +36,8 @@
 
         --color-hard: #f8615c;
         --color-hard-dim: #f8615c6b;
+
+        --atlassian-blue: #5b6db5;
     }
 }
 
@@ -223,19 +227,22 @@ a {
     top: 0;
     left: 0;
     z-index: -10;
-    opacity: 0.75;
+    opacity: 0.5;
+
+    filter: grayscale(50%);
 
     animation: skeleton-loading 1s ease infinite alternate;
     
     object-fit: cover;
     object-position: center;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease, filter 0.3s ease;
     -webkit-user-drag: none ;
 }
 
 .page.selected > .page-image,
 .page:hover >.page-image {
     opacity: 1;
+    filter: grayscale(0%)
 }
 
 ul {
@@ -314,17 +321,18 @@ ul {
 
 h2 {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 sub {
     font-style: italic;
     margin-bottom: 5px;
+    color: #808080;
 }
 
-.page-date {
+.page-date { 
     position: absolute;
-    font-size: 12px;
+    font-size: 0.8rem;
     margin: 10px;
     border-radius: 10px;
     top: -20px;
@@ -372,7 +380,9 @@ sub {
     visibility: visible;
 }
 
-
+.link-list {
+    margin-top: 8px;
+}
 
 @media screen and (max-width: 800px) {
     body {
