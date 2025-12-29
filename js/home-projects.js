@@ -4,15 +4,26 @@
 const projects = [
     { divider: true, divider_id: "tab2025", name: "Current Projects", subtitle: "Completed or Working on" },
     // {
-    //     name: "Weeklinks",
+    //     name: "Weeklink",
     //     subtitle: "Application, Web",
     //     year: "tbc",
-    //     image: "gromit.png",
+    //     image: "weeklink.png",
     //     links: [
     //         // { url: "https://github.com/SlickRamen/gromit", text: "Github Repository", type: "github"},
     //         { url: "/projects/page-weeklinks", text: "More Info" }
-    //     ]
+    //     ]    
     // },
+    {
+        name: "Bloodshot",
+        subtitle: "Game, Windows",
+        year: "tbc",
+        image: "bloodshot2.png",
+        links: [
+            // { url: "https://itch.io", text: "Presskit", type: "redirect"},
+            // { url: "/not-found", text: "Publisher Demo", type: "redirect"},
+            { url: "/not-found", text: "More Info" }
+        ]
+    },
     {
         name: "Hatch",
         subtitle: "Application, Web",
@@ -20,16 +31,8 @@ const projects = [
         image: "hatch.png",
         links: [
             { url: "https://github.com/SlickRamen", text: "Github Repository", type: "github"},
+            { url: "/projects/page-hatch-design", text: "Design" },
             { url: "/projects/page-hatch", text: "More Info" }
-        ]
-    },
-    {
-        name: "Hatch Design",
-        subtitle: "Design, Figma",
-        year: "2025",
-        image: "hatch.png",
-        links: [
-            { url: "/projects/page-hatch-design", text: "More Info" }
         ]
     },
     {
@@ -42,17 +45,6 @@ const projects = [
             { url: "/projects/page-gamedir", text: "More Info" }
         ]
     },
-    // {
-    //     name: "Bloodshot",
-    //     subtitle: "Game, Windows",
-    //     year: "tbc",
-    //     image: "bloodshot.png",
-    //     links: [
-    //         // { url: "https://itch.io", text: "Presskit", type: "redirect"},
-    //         // { url: "/not-found", text: "Publisher Demo", type: "redirect"},
-    //         { url: "/projects/page-bloodshot", text: "More Info" }
-    //     ]
-    // },
     {
         name: "RIP Routing Implementation",
         subtitle: "Application, Windows",
