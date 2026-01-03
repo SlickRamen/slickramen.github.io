@@ -9,8 +9,7 @@ const projects = [
         year: "2026",
         image: "default-labs.png",
         links: [
-            // { url: "https://itch.io", text: "Presskit", type: "redirect"},
-            // { url: "/not-found", text: "Publisher Demo", type: "redirect"},
+            { url: "https://www.defaultlabs.net/", text: "Website", type: "redirect"},
             { url: "/not-found", text: "More Info" }
         ]
     },
