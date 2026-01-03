@@ -4,9 +4,9 @@
 const projects = [
     { divider: true, divider_id: "tab2026", name: "Current Projects", subtitle: "Completed or Working on" },
     {
-        name: "Default Labs",
+        name: "default labs",
         subtitle: "Game Collective",
-        year: "2025",
+        year: "2026",
         image: "default-labs.png",
         links: [
             // { url: "https://itch.io", text: "Presskit", type: "redirect"},
