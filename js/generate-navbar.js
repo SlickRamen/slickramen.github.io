@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
             ${links}
         </div>
         <div class="copyright optional">
-            designed and constructed by martyn gascoigne [2025]
+            designed and constructed by martyn gascoigne [2026]
         </div>
         `
-    }
+    } // first published 2025
 })

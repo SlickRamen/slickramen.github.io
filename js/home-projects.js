@@ -2,7 +2,30 @@
  * Set up the list of projects
  */
 const projects = [
-    { divider: true, divider_id: "tab2025", name: "Current Projects", subtitle: "Completed or Working on" },
+    { divider: true, divider_id: "tab2026", name: "Current Projects", subtitle: "Completed or Working on" },
+    {
+        name: "Default Labs",
+        subtitle: "Game Collective",
+        year: "2025",
+        image: "default-labs.png",
+        links: [
+            // { url: "https://itch.io", text: "Presskit", type: "redirect"},
+            // { url: "/not-found", text: "Publisher Demo", type: "redirect"},
+            { url: "/not-found", text: "More Info" }
+        ]
+    },
+    {
+        name: "Bloodshot",
+        subtitle: "Game, Windows",
+        year: "tbc",
+        image: "bloodshot2.png",
+        links: [
+            // { url: "https://itch.io", text: "Presskit", type: "redirect"},
+            // { url: "/not-found", text: "Publisher Demo", type: "redirect"},
+            { url: "/not-found", text: "More Info" }
+        ]
+    },
+    { divider: true, divider_id: "tab2025", name: "2025 Works", subtitle: "" },
     // {
     //     name: "Weeklink",
     //     subtitle: "Application, Web",
@@ -14,10 +37,10 @@ const projects = [
     //     ]    
     // },
     {
-        name: "Bloodshot",
+        name: "Madness: Zombies",
         subtitle: "Game, Windows",
         year: "tbc",
-        image: "bloodshot2.png",
+        image: "madness-zombies.png",
         links: [
             // { url: "https://itch.io", text: "Presskit", type: "redirect"},
             // { url: "/not-found", text: "Publisher Demo", type: "redirect"},
