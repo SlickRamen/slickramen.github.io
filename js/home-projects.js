@@ -9,7 +9,7 @@ const projects = [
     //     year: "tbc",
     //     image: "weeklink.png",
     //     links: [
-    //         // { url: "https://github.com/SlickRamen/gromit", text: "Github Repository", type: "github"},
+    //         // { url: "https://github.com/slickramen/gromit", text: "Github Repository", type: "github"},
     //         { url: "/projects/page-weeklinks", text: "More Info" }
     //     ]    
     // },
@@ -30,7 +30,7 @@ const projects = [
         year: "2025",
         image: "hatch.png",
         links: [
-            { url: "https://github.com/SlickRamen", text: "Github Repository", type: "github"},
+            { url: "https://github.com/slickramen", text: "Github Repository", type: "github"},
             { url: "/projects/page-hatch-design", text: "Design" },
             { url: "/projects/page-hatch", text: "More Info" }
         ]
@@ -41,7 +41,7 @@ const projects = [
         year: "2025",
         image: "gamedir.png",
         links: [
-            { url: "https://github.com/SlickRamen/gamedir", text: "Github Repository", type: "github"},
+            { url: "https://github.com/slickramen/gamedir", text: "Github Repository", type: "github"},
             { url: "/projects/page-gamedir", text: "More Info" }
         ]
     },
@@ -61,7 +61,7 @@ const projects = [
         year: "2025",
         image: "gromit.png",
         links: [
-            { url: "https://github.com/SlickRamen/gromit-react", text: "Github Repository", type: "github"},
+            { url: "https://github.com/slickramen/gromit-react", text: "Github Repository", type: "github"},
             { url: "/projects/page-gromit", text: "More Info" }
         ]
     },
@@ -71,7 +71,7 @@ const projects = [
         year: "2025",
         image: "gitcontribution.png",
         links: [
-            { url: "https://github.com/SlickRamen/git-contribution-graph", text: "Github Repository", type: "github"},
+            { url: "https://github.com/slickramen/git-contribution-graph", text: "Github Repository", type: "github"},
             { url: "/projects/page-gitcontribution", text: "More Info" }
         ]
     },
