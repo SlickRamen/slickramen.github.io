@@ -53,7 +53,6 @@ const projects = [
         image: "hatch.png",
         links: [
             { url: "https://github.com/slickramen", text: "Github Repository", type: "github"},
-            { url: "/projects/page-hatch-design", text: "Design" },
             { url: "/projects/page-hatch", text: "More Info" }
         ]
     },
