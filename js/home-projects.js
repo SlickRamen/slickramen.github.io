@@ -68,12 +68,12 @@ const projects = [
     },
     {
         name: "RIP Routing Implementation",
-        subtitle: "Application, Windows",
+        subtitle: "Program, Python",
         year: "2025",
         image: "pta.png",
         links: [
             { url: "https://github.com/maxwmoir/rip-project", text: "Github Repository", type: "github"},
-            { url: "/projects/page-rip", text: "More Info" }
+            { url: "/not-found", text: "More Info" }
         ]
     },
     {
